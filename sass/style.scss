@@ -1,0 +1,32 @@
+/*
+Theme Name: Method Consultancy Theme
+Author: Zac Gordon
+Author URI: http://wp.zacgordon.com/
+Description: Example theme for working with template hierarchy
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+
+//@import url('FONT URL');
+
+// Normalise
+@import 'normalize';
+
+// WordPress required
+@import 'wordpress';
+
+ //Utilites
+@import 'variables',
+        'mixins';
+
+// Base Styles
+@import 'base';
+
+// Main Sections
+@import 'main',
+        'header',  
+        'nav',
+        'footer';

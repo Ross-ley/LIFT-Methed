@@ -1,0 +1,31 @@
+
+.post {
+	margin: 20px 0;
+	border-bottom: 1px #efefef solid;
+	padding: 20px 0;
+}
+.post:last-child {
+	border-bottom: none;
+}
+.meta {
+	margin: 10px 0;
+	font-size: .8em;
+	color: #999;
+	font-style: italic;
+}
+.post-type {
+	text-transform: capitalize;
+}
+.category-travel .navbar-default {
+	background: yellow
+}
+
+.author .page-header {
+	overflow: auto;
+}
+
+.page-header img {
+	float: left;
+	display: block;
+	margin: 10px;
+}

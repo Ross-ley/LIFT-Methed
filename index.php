@@ -1,44 +1,36 @@
-<?php get_header(); ?>
+<?php get_header(); ?>	 <!-- include header.php -->
 
-<section>
-    <div>
+    <div class="container" role="main">
 
-    <h1>MY HEADER</h1>
+	    <div class="row">
 
-        <div class="cards-container">
-            <!-- LOOP START -->
-            <?php 
+	    	<div class="col-md-8">
 
-                $args = array(
-                    'post_type' => 'latest_news'
-                );
-                $query = new WP_Query( $args );
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	
+				    <div class="page-header">	
+				    	<h1><?php the_title(); ?></h1>
+				    </div>
 
-            ?>
 
-            <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+					<?php the_content(); ?>
 
-            <div class="card">
-            <img src="<?php the_field('image'); ?>" alt="image"></p>        
-            <p><?php the_field('content'); ?></p>        
+				<?php endwhile; else: ?>
 
-            </div>
-            <?php endwhile; endif; wp_reset_postdata(); ?>
-            <!-- LOOP END -->
-        <div class="cards-container">
+					<div class="page-header">	
+				    	<h1>Oh no!</h1>
+				    </div>
+
+				    <p>We could not find this page!!!</p>
+
+				<?php endif; ?>
+
+	    	</div>
+
+	    	<?php get_sidebar(); ?>	<!-- include sidebar.php -->
+
+	    </div>
 
     </div>
-</section>
 
-<?php get_footer(); ?>
-
-
-<!-- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-<div class="card">
-    <h1><?php the_title(); ?></h1>
-    <p><?php the_content(); ?></p>        
-</div>
-<?php endwhile; else : ?>
-    <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?> -->
+<?php get_footer(); ?> <!-- include footer.php -->
