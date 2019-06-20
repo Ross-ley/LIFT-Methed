@@ -27,7 +27,7 @@
 
 	    	</div>
 
-	    	<?php get_sidebar(); ?>	<!-- include sidebar.php -->
+	    	<!-- <?php get_sidebar(); ?>	include sidebar.php -->
 
 	    </div>
 
