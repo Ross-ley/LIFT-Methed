@@ -8,9 +8,8 @@ add_theme_support( 'html5' );
 
 // Load Theme CSS
 function theme_styles() {	
-
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css' );	
-	wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
+	wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.9.0/css/all.css' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );	
 
 }

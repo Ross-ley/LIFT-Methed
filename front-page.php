@@ -1,27 +1,15 @@
 <?php get_header(); ?>
 
-    <div class="container test" role="main">
+    <div class="container text-center">
+		<h1 class="display-1">News</h1>
+		<p class="lead">Article</p>
 
-	    <div class="row">
-
-	    	<div class="col-md-8">
-
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	
-				    <div class="page-header">	
-				    	<h1><?php the_title(); ?></h1>
-				    </div>
-
-					<?php the_content(); ?>
-
-				<?php endwhile; endif; ?>
-
-	    	</div>
-
-	    	<?php get_sidebar(); ?>
-
-	    </div>
-
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+			</div>
+		</div>
     </div>
 
 <?php get_footer(); ?>
