@@ -11,7 +11,7 @@
 
   <body <?php body_class(); ?>>
 
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default nav-bar" role="navigation">
       <div class="container">
         <?php 
           $args = array(
