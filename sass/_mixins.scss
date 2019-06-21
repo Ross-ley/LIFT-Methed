@@ -1,0 +1,34 @@
+
+@function px-to-pc($target, $context) {
+    @return ($target / $context) * 100%;
+ }
+
+
+ @function px-to-rem($target, $context) {
+   @return ($target / $context) * 1rem;
+ }
+
+
+ @mixin mq($break) {
+
+    @if $break == 's' {
+        @media (min-width: map-get($breakpoints, 's')) {
+            @content;
+        }
+    }
+    @else if $break == 'm' {
+        @media (min-width: map-get($breakpoints, 'm')) {
+            @content;
+        }				
+    }
+    @else if $break == 'l' {
+        @media (min-width: map-get($breakpoints, 'l')) {
+            @content;
+        }				
+    }
+    @else if $break == 'xl' {
+        @media (min-width: map-get($breakpoints, 'xl')) {
+            @content;
+        }				
+    }
+}

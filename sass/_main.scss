@@ -1,37 +1,91 @@
 
-// .news-cards {
-//     img {
-//         width: 100%;
-//     }
-// }
+////////////////////////////////////////
+/// Latest News
+///////////////////////////////////////
+.section-news {
+    background-color: $col-bg-lightBlue;
+    img {
+        width: 100%;
+    }
+    >h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: $font-sz-2;
+        text-transform: capitalize;
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    >p {
+        text-align: center;
+    }
+}
 
-// .post {
-// 	margin: 20px 0;
-// 	border-bottom: 1px #efefef solid;
-// 	padding: 20px 0;
-// }
-// .post:last-child {
-// 	border-bottom: none;
-// }
-// .meta {
-// 	margin: 10px 0;
-// 	font-size: .8em;
-// 	color: #999;
-// 	font-style: italic;
-// }
-// .post-type {
-// 	text-transform: capitalize;
-// }
-// .category-travel .navbar-default {
-// 	background: yellow
-// }
+.news-card {
+    margin-bottom: 40px;
+}
 
-// .author .page-header {
-// 	overflow: auto;
-// }
+.news-card-content {
+    text-align: left;
+    padding: 35px 30px 40px 45px;
 
-// .page-header img {
-// 	float: left;
-// 	display: block;
-// 	margin: 10px;
-// }
+    @include mq('m') {
+        padding: 25px 20px 30px 35px;
+    }
+
+    background-color: white;
+
+    h3 {
+        font-weight: 500;
+        color: $col-text-grey;
+        font-size: $font-sz-4;
+        @include mq('m') {
+            font-size: $font-sz-5;
+        }
+    }
+
+    p { // date
+        color: #006bfd;
+        font-size: $font-sz-5;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+        margin-top: 45px;
+    }
+
+    button {
+        background-color: $col-primary;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-size: $font-sz-6;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 3px 13px 0 13px;
+        height: 35px;
+
+        &:hover {
+            background-color: darken($col-primary, 6%);
+        }
+    }
+
+    small {
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: 5px;
+        margin-right: 1px;
+    }
+
+    img {
+        width: 90px;
+    }
+}
+
+.news-card-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 220px;
+}

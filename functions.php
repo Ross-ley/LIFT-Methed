@@ -25,7 +25,7 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 // Load Theme Fonts
 function theme_fonts() {
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700&display=swap', false );
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700&display=swap', false );
 }
 add_action( 'wp_enqueue_scripts', 'theme_fonts');
 
