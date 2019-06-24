@@ -1,20 +1,282 @@
 
 ////////////////////////////////////////
+/// Services
+///////////////////////////////////////
+.our-services {
+    background-color: #DADADA;
+    height: auto;
+    .ser-ico {
+        display: inline-block;
+        color: #FF7900;
+        background-color: rgba(#fff, .8);
+        padding-top: .65rem;        // <--
+        width: 5rem;                //
+        height: 5rem;               // Icon and background size and allignment
+        font-size: 2.5rem;          //
+        border-radius: 50%;         // -->
+    }
+    .ser-title {
+        display: none;              // No title when in mobile
+        text-align: center;
+        color: #fff;
+        // h2 {
+        //     font-size: 2.5rem;
+        //     margin-bottom: 1rem;
+        // }
+        p {
+            //font-size: 1.5rem;
+            //margin-bottom: 2.5rem;
+        }
+    }
+    .row {
+        padding-top: 15px;        // <-- Bootstrap grids have no vertical spacing.
+    }                             // Giving spacing to row top so the padding isn't duplcated between cards.
+    .ser {                        //
+        padding-bottom: 15px;     // 15px matches the deafult left/right value -->
+        text-align: center;
+        h3, p {
+            font-weight: lighter;
+            color: #fff;
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin: .5rem 0;
+        }
+        p {
+            font-size: .75rem;
+            max-width: 200px;
+            margin: 0 auto 1rem;   // Centering paragraph as it has a set width giving spacing aswell.
+        }
+        .ser-con {
+            padding: 1.5rem;
+            background-color: #FF7900;
+            border-radius: 10px;
+            height: 100%;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+        .btn {
+            background-color: rgba(#fff, .95);
+            border: none;
+            border-radius: 5px;
+            padding: .25rem .75rem;
+            color: #FF7900;
+            text-transform: uppercase;
+            font-weight: 500;
+            &:hover {
+                background-color: rgba(#fff, .85);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .our-services {
+        background-color: #FF7900;      // Background color changes to card color to mask shape.
+        .container {
+            padding-top: 5rem;
+            padding-bottom: 3.5rem;
+        }
+        .ser-title {
+            display: block;               // Title is diplayed in desktop sizes.
+        }
+        .ser-ico {
+            padding-top: .5rem;           // <-- Increasing Icon size 
+            width: 6rem;                  //
+            height: 6rem;                 //
+            font-size: 3.5rem;            // --> 
+        }
+        .ser {
+            h3 {
+                font-weight: normal;
+                // /font-size: 1.75rem;
+                margin: 1rem 0;
+            }
+            .btn {
+                font-size: 1.2rem;
+                padding: .5rem 1.5rem;
+                border-radius: 10px;
+            }
+            p {
+                font-size: $font-sz-6;
+                max-width: 250px;
+                margin: .5rem auto 1.5rem;
+            }
+
+            .ser-con {
+                padding: 0;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////
+/// Expertise
+///////////////////////////////////////
+
+.section-expertise {
+    text-align: center;
+
+    padding: 40px 0;
+
+    img {
+        width: 100%;
+    }
+
+    p { // sub heading
+        font-size: $font-sz-6;
+
+        @include mq('md') {
+            font-size: $font-sz-5;
+        }
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(41, 41, 41, 0.8);
+    width: 100;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 20px 0 20px;
+    line-height: 2;
+    font-size: $font-sz-6;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 15;
+
+    &:focus {
+        opacity: 0.5;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255,120,0)' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255,120,0)' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+////////////////////////////////////////
+/// Testimonials
+///////////////////////////////////////
+
+.section-testimonials {
+    background-color: $col-bg-grey;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    @include mq('m') {
+        padding-top: 60px;
+        h1 {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.testimonial-card-mobile {
+    background-color: white;
+
+    margin-bottom:30px;
+    padding: 15px 20px 15px 20px;
+
+    img {
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 15px;
+        float: right;
+    }
+
+    button {
+        @include button($col-primary);
+        margin-left: auto;
+    }
+
+}
+
+.testimonial-card-mobile:nth-child(even) {
+
+    h3 {
+        margin-left: 115px;
+    }
+
+    img {
+        float: left;
+        margin-right: 15px;
+    }
+}
+
+.testimonial-card {
+    
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    button {
+        @include button($col-primary);
+
+        margin-top: auto;
+    }
+
+}
+
+.testimonial-content {
+    background-color: white;
+
+    padding: 20px 0 20px 20px;
+}
+
+.testimonial-img-bg {
+    background: linear-gradient(to right, white,  white 49%, $col-bg-grey 50%);
+}
+
+.testimonial-img-left {
+    .testimonial-img-bg {
+        order: 1;
+        background: linear-gradient(to right, $col-bg-grey,  $col-bg-grey 49%, white 50%);
+    }
+
+    .testimonial-content {
+        order: 2;
+    }
+}
+
+////////////////////////////////////////
 /// Latest News
 ///////////////////////////////////////
 .section-news {
     background-color: $col-bg-lightBlue;
-    img {
+
+    img {   // size article feature images to span column width
         width: 100%;
     }
-    >h1 {
-        text-align: center;
-        font-weight: 600;
-        font-size: $font-sz-2;
-        text-transform: capitalize;
+
+    >h1 {   // Letest news heading
         padding-top: 35px;
         padding-bottom: 10px;
     }
+
     >p {
         text-align: center;
     }
@@ -25,8 +287,7 @@
 }
 
 .news-card-content {
-    text-align: left;
-    padding: 35px 30px 40px 45px;
+    padding: 28px 22px;
 
     @include mq('m') {
         padding: 25px 20px 30px 35px;
@@ -37,40 +298,31 @@
     h3 {
         font-weight: 500;
         color: $col-text-grey;
-        font-size: $font-sz-4;
-        @include mq('m') {
-            font-size: $font-sz-5;
-        }
     }
 
-    p { // date
+    p { // Date of article
         color: #006bfd;
-        font-size: $font-sz-5;
+        font-size: $font-sz-7;
         font-weight: 600;
         text-transform: capitalize;
-        margin-bottom: 3px;
-        margin-top: 45px;
+        margin-bottom: 10px;
+        margin-top: 25px;
     }
 
     button {
-        background-color: $col-primary;
-        color: white;
-        border-radius: 6px;
-        border: none;
-        outline: none;
-        font-size: $font-sz-6;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding: 3px 13px 0 13px;
-        height: 35px;
+        @include button($col-primary);
 
-        &:hover {
-            background-color: darken($col-primary, 6%);
+        font-size: $font-sz-6;
+        padding: 2px 25px 0 25px;
+        height: 30px;
+
+        @include mq('m') {
+            padding: 2px 20px 0 20px;
         }
     }
 
-    small {
-        font-size: 1.1rem;
+    small {     // "by" text
+        font-size: $font-sz-7;
         font-weight: 600;
         display: inline-block;
         vertical-align: bottom;
@@ -78,12 +330,12 @@
         margin-right: 1px;
     }
 
-    img {
-        width: 90px;
+    img {   // method logo
+        width: 60px;
     }
 }
 
-.news-card-bottom-row {
+.news-card-bottom-row {     // spacing between button and author
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

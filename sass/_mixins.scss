@@ -1,4 +1,21 @@
 
+@mixin button($color) {
+    background-color: $color;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: $font-sz-6;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 3px 13px 0 13px;
+    height: 35px;
+
+    &:hover {
+        background-color: darken($color, 6%);
+    }
+}
+
 @function px-to-pc($target, $context) {
     @return ($target / $context) * 100%;
  }
