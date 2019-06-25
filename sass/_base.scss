@@ -24,7 +24,4 @@ h2 {
 
 h3 {
     font-size: $font-sz-5;
-    @include mq('m') {
-        font-size: $font-sz-5;
-    }
 }

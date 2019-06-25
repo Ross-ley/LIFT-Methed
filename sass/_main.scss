@@ -1,5 +1,46 @@
 
 ////////////////////////////////////////
+/// Promotion
+///////////////////////////////////////
+
+.section-promotion {
+    padding: 30px 0;
+}
+
+.promo-img {
+    border-radius: 50%;
+    width: 100%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.promo-text {
+    text-align: center;
+
+    @include mq('s') {
+        text-align: left;
+    }
+
+    h3 {
+        margin-bottom: 50px;
+
+        font-weight: 600;
+        @include mq('m') {
+            font-size: $font-sz-4;
+        }
+    }
+
+    p {
+        font-size: $font-sz-7;
+        @include mq('m') {
+            font-size: $font-sz-6;
+        }
+
+    }
+}
+
+////////////////////////////////////////
 /// Services
 ///////////////////////////////////////
 .our-services {
@@ -35,11 +76,11 @@
             color: #fff;
         }
         h3 {
-            font-size: 1.25rem;
+            font-size: $font-sz-5;
             margin: .5rem 0;
         }
         p {
-            font-size: .75rem;
+            font-size: $font-sz-7;
             font-weight: 500;
             max-width: 200px;
             margin: 0 auto 1rem;   // Centering paragraph as it has a set width giving spacing aswell.
@@ -109,11 +150,10 @@
         .ser {
             h3 {
                 font-weight: 600;
-                // /font-size: 1.75rem;
                 margin: 1rem 0;
             }
             .ser-btn {
-                font-size: 1.2rem;
+                font-size: $font-sz-5;
                 padding: .5rem 1.5rem;
                 border-radius: 10px;
             }

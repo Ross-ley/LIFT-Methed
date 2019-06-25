@@ -1,4 +1,19 @@
 <?php get_header(); ?>
+
+<section class="section-promotion">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-8 col-lg-7 promo-text">
+				<h3>Grow your business today without stress so you can focus on what matters</h3>
+				<p>We support companies of all sizes from-start ups to multi-nationals</p>
+				<p>Specialising in marketing strategy, planning and implementation we can provide you with everything you need to execute your business.</p>
+			</div>
+			<div class="col-4 col-lg-5 d-none d-sm-block">
+				<img class="promo-img" src="<?php bloginfo('template_directory'); ?>/images/jump.png" alt="Method Consultancy">
+			</div>
+		</div>
+	</div>
+</section>
 <section class="our-services">
             <div class="container">
                 <div class="ser-title">
@@ -179,5 +194,11 @@
 		</div>	<!--  ./row  -->
 	</div>	<!--  /.container  -->
 </section>	<!--  /.section-news  -->
+<section class="section-contact">
+	<div class="container">
+		<h1>contact us today</h1>
+		<?php echo do_shortcode( '[contact-form-7 id="51" title="Contact form 1"]' ); ?>
+	</div>
+</section>
 
 <?php get_footer(); ?>
