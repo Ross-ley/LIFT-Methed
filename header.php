@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title('|', true, 'right'); ?><?php echo get_bloginfo('name'); ?></title> 
-    <link rel="stylesheet" type="text/css" herf="style.css">
     
     <?php wp_head(); ?>
 
