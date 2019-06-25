@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<div class="header-img-container">
+<img class="header-img" src="<?php bloginfo('template_directory'); ?>/images/Layer_2.jpg" alt="Method Consultancy">
+<i class="fas fa-chevron-down"></i>
+<p class="findOutMore">Find Out More</p>
+</div>
+
 <section class="our-services">
             <div class="container">
                 <div class="ser-title">
