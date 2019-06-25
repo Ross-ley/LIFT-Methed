@@ -19,20 +19,16 @@
         display: none;              // No title when in mobile
         text-align: center;
         color: #fff;
-        // h2 {
-        //     font-size: 2.5rem;
-        //     margin-bottom: 1rem;
-        // }
-        p {
-            //font-size: 1.5rem;
-            //margin-bottom: 2.5rem;
-        }
     }
     .row {
         padding-top: 15px;        // <-- Bootstrap grids have no vertical spacing.
     }                             // Giving spacing to row top so the padding isn't duplcated between cards.
     .ser {                        //
         padding-bottom: 15px;     // 15px matches the deafult left/right value -->
+
+        a {
+        padding: 10px;
+        }
         text-align: center;
         h3, p {
             font-weight: lighter;
@@ -44,20 +40,20 @@
         }
         p {
             font-size: .75rem;
+            font-weight: 500;
             max-width: 200px;
             margin: 0 auto 1rem;   // Centering paragraph as it has a set width giving spacing aswell.
         }
         .ser-con {
-            padding: 1.5rem;
+            //padding: 1.5rem;
             background-color: #FF7900;
             border-radius: 10px;
-            height: 100%;
-
-            &:hover {
-                background-color: white;
-            }
+            //height: 100%;
         }
-        .btn {
+        .ser-btn {
+            width: 180px;
+            margin: 0 auto;
+
             background-color: rgba(#fff, .95);
             border: none;
             border-radius: 5px;
@@ -67,6 +63,28 @@
             font-weight: 500;
             &:hover {
                 background-color: rgba(#fff, .85);
+            }
+        }
+
+        &:hover {
+            .ser-con {
+                background-color: white;
+            }
+
+            .ser-btn {
+                background-color: #FF7900;
+                color: white;
+            }
+            h3, p {
+                color: #FF7900;
+            }
+
+            .ser-ico {
+                background-color: #FF7900;
+
+                i {
+                    color: white;
+                }
             }
         }
     }
@@ -90,11 +108,11 @@
         }
         .ser {
             h3 {
-                font-weight: normal;
+                font-weight: 600;
                 // /font-size: 1.75rem;
                 margin: 1rem 0;
             }
-            .btn {
+            .ser-btn {
                 font-size: 1.2rem;
                 padding: .5rem 1.5rem;
                 border-radius: 10px;
@@ -192,16 +210,18 @@
     }
 }
 
-.testimonial-card-mobile {
+.testimonial-card {
     background-color: white;
-
-    margin-bottom:30px;
+    
     padding: 15px 20px 15px 20px;
+    margin-bottom:30px;
+    margin-left: 0;
+    margin-right: 0;
+
 
     img {
         width: 100px;
         border-radius: 50%;
-        margin-right: 15px;
         float: right;
     }
 
@@ -210,9 +230,14 @@
         margin-left: auto;
     }
 
+    @include mq('s') {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
 }
 
-.testimonial-card-mobile:nth-child(even) {
+.testimonial-card:nth-child(even) {
 
     h3 {
         margin-left: 115px;
@@ -224,42 +249,50 @@
     }
 }
 
-.testimonial-card {
-    
-    margin-bottom: 50px;
+@media only screen and (min-width: map-get($breakpoints, 'm')) {
 
-    img {
-        width: 100%;
-        border-radius: 50%;
-    }
+    .testimonial-card {
 
-    button {
-        @include button($col-primary);
+        background-color: none;
 
-        margin-top: auto;
-    }
+        padding: 0;
+        
+        margin-bottom: 50px;
 
-}
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
 
-.testimonial-content {
-    background-color: white;
+        button {
+            @include button($col-primary);
 
-    padding: 20px 0 20px 20px;
-}
+            margin-top: auto;
+        }
 
-.testimonial-img-bg {
-    background: linear-gradient(to right, white,  white 49%, $col-bg-grey 50%);
-}
-
-.testimonial-img-left {
-    .testimonial-img-bg {
-        order: 1;
-        background: linear-gradient(to right, $col-bg-grey,  $col-bg-grey 49%, white 50%);
     }
 
     .testimonial-content {
-        order: 2;
+        background-color: white;
+
+        padding: 20px 0 20px 20px;
     }
+
+    .testimonial-img-bg {
+        background: linear-gradient(to right, white,  white 49%, $col-bg-grey 50%);
+    }
+
+    .testimonial-img-left {
+        .testimonial-img-bg {
+            order: 1;
+            background: linear-gradient(to right, $col-bg-grey,  $col-bg-grey 49%, white 50%);
+        }
+
+        .testimonial-content {
+            order: 2;
+        }
+    }
+
 }
 
 ////////////////////////////////////////

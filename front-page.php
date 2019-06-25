@@ -6,37 +6,37 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, animi.</p>
                 </div>
                 <div class="row">
-                    <div class="ser col-12 col-sm-6 col-lg-3">
+                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
                         <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
                             <div class="ser-ico"><i class="fas fa-handshake"></i></div>
                             <h3>Consultancy</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, illum!</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
+                            <div href="#" class="ser-btn">Read More</div>
+						</a></div>
                     </div>
-                    <div class="ser col-12 col-sm-6 col-lg-3">
+                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
                         <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
                             <div class="ser-ico"><i class="fas fa-desktop"></i></div>
                             <h3>Digital</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, impedit.</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
+                            <div href="#" class="ser-btn">Read More</div>
+							</a></div>
                     </div>
-                    <div class="ser col-12 col-sm-6 col-lg-3">
+                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
                         <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
                             <div class="ser-ico"><i class="fas fa-lightbulb"></i></div>
                             <h3>Brand</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, itaque?</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
+                            <div href="#" class="ser-btn">Read More</div>
+							</a></div>
                     </div>
-                    <div class="ser col-12 col-sm-6 col-lg-3">
+                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
                         <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
                             <div class="ser-ico"><i class="fas fa-bullhorn"></i></div>
                             <h3>PR</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, optio.</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
+                            <div href="#" class="ser-btn">Read More</div>
+							</a></div>
                     </div>
                 </div> <!-- row endof -->
             </div> <!-- container endof -->
@@ -90,55 +90,38 @@
 <section class="section-testimonials">
 	<!-- Testimials Mobile  -->
 	<h1>our testimonials</h1>
-	<div class="container d-md-none">
-		<div class="testimonial-card-mobile">
-			<h3>Meet Josh</h3>
-			<img src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a</p>
-			<button>read more</button>
-		</div>
-		<div class="testimonial-card-mobile">
-			<h3>Meet Clair</h3>
-			<img src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Clair">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a</p>
-			<button>read more</button>
-		</div>
-		<div class="testimonial-card-mobile">
-				<h3>Meet Ryan</h3>
-				<img src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Ryan">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a</p>
-				<button>read more</button>
-		</div>
-	</div>
 
-	<div class="container d-none d-md-block">
+	<div class="container">
 		<div class="testimonial-card row">
-			<div class="testimonial-content col-7 col-lg-9">
+			<div class="testimonial-content col-md-7 col-lg-9">
 				<h2>Meet Josh</h2>
+				<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
 				<button>find out more</button>
 			</div>
-			<div class="testimonial-img-bg col-5 col-lg-3">
+			<div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
 				<img  src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
 			</div>
 		</div>
 		<div class="testimonial-card row testimonial-img-left">
-			<div class="testimonial-content col-7 col-lg-9">
+			<div class="testimonial-content col-md-7 col-lg-9">
 				<h2>Meet Clair</h2>
+				<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
 				<button>find out more</button>
 			</div>
-			<div class="testimonial-img-bg col-5 col-lg-3">
+			<div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
 				<img  src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
 			</div>
 		</div>
 		<div class="testimonial-card row">
-			<div class="testimonial-content col-7 col-lg-9">
+			<div class="testimonial-content col-md-7 col-lg-9">
 				<h2>Meet Ryan</h2>
+				<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
 				<button>find out more</button>
 			</div>
-			<div class="testimonial-img-bg col-5 col-lg-3">
+			<div class="testimonial-img-bg col-md-5 col-lg-3  d-none d-md-block">
 				<img  src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
 			</div>
 		</div>		
