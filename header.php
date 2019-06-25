@@ -13,6 +13,7 @@
 
     <div class="navbar navbar-default nav-bar" role="navigation">
       <div class="container">
+      <img src="img/Method.png" alt="logo">
         <?php 
           $args = array(
           	'menu'        => 'header-menu',            
