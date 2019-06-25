@@ -1,12 +1,10 @@
 	<hr>
     
-    <div class="container">
-      <footer>
-        
-        <p>Demo site for learning the WordPress template hierarchy</p>
-      	
-      </footer>
-    </div> <!-- /container -->
+    
+<footer>
+    
+
+</footer>
 
     <?php wp_footer(); ?>
 
