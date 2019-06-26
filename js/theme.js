@@ -28,6 +28,11 @@ jQuery(document).ready(function($) {
 
    // Sets bootstrap grid 'row' for form layout
    $('.wpcf7-form').addClass('row');
+
+// asks if page is on home 
+   if ( $('body').hasClass('home')) {
+      $('body').addClass('null');
+  } else {
+      $('body').addClass('space');
+  }
 });
-
-
