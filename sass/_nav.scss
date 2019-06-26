@@ -46,5 +46,8 @@
             cursor: pointer;
         }
     }
-    
+    position: fixed;
+    top: 15;
+    z-index: 10;
+    width: 100vw;    
 }
