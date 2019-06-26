@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
    $('.wpcf7-textarea').focus( function () {
 
       if(!cleared) {
+         $(this).css('color', 'black');
          $(this).val('');
          cleared = true;
       }

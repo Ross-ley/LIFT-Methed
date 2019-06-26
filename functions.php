@@ -3,7 +3,6 @@
 // Enable Theme Support
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats', array( 'image', 'quote' ) );
 add_theme_support( 'html5' );
 
 // Load Theme CSS
@@ -57,6 +56,5 @@ function create_widget($name, $id, $description) {
 
 // Create widgets 
 create_widget("Primary Sidebar", "primary", "Displays on the side of most pages");
-create_widget("Blog Sidebar", "blog", "Displays on the side of the blog section");
 
 ?>
