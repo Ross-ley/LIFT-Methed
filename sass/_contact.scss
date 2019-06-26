@@ -1,25 +1,25 @@
 
 .section-contact {
-    background-color: #007eff;
 
+    background-color: #007eff;
     padding: 40px 0;
 
-    h1 {
+    h1 {  // Main heading
         color: white;
     }
 
-    label {
+    label { // Field label
         color: white;
         width: 100%;
-
         font-size: $font-sz-5;
     }
 
     p {
-        margin-bottom: 8px;
+        margin-bottom: 8px;   // spacing between fields
     }
 }
 
+// All text fields
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -28,19 +28,21 @@ textarea
     border-radius: 5px;
     border: none;
     width: 100%;
-
     padding: 6px 10px;
+    margin-top: 3px;
 }
 
 textarea {
     font-size: $font-sz-6;
     resize: none;
+    height: 150px;
 }
 
 span.wpcf7-list-item {
-    margin: 0; 
+    margin: 0;  // Remove left margin from "Sign up" checkbox
 }
 
+// Submit button
 input[type="submit"] {
     @include button($col-primary);
 
@@ -51,9 +53,32 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
-.wpcf7-form p:last-of-type {
-    text-align: center;
+// Submit processing gif
+div.wpcf7 .ajax-loader {
+  background-image: none;
 }
+
+.wpcf7-form p:last-of-type {
+    text-align: center; // Center button
+}
+
+// Submit response message
+.wpcf7-response-output {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+// Response message type error
+div.wpcf7-validation-errors {
+  border: 2px solid red;
+}
+
+
+///////////////////////////////////
+////  Custom "Sign Up" checkbox
+///////////////////////////////////
 
 /* Hide HTML5 Up and Down arrows. */
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
@@ -64,7 +89,6 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 input[type="number"] {
     -moz-appearance: textfield;
 }
-
 
 /* Customize the label (the container) */
 .checkbox-wrapper {
@@ -135,3 +159,55 @@ input[type="number"] {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+
+///////////////////////////////////
+////  Custom dropdown button
+///////////////////////////////////
+
+
+.Country {
+  padding: 9px 0;
+}
+
+.Country select {
+    background-color: white;
+    color: black;
+    padding: 6px 10px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .Country::before {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: $col-primary;
+    background-color: rgb(170, 170, 170);
+    pointer-events: none;
+    border-radius: 5px;
+  }
+  
+  .Country:hover::before {
+    color: rgba(170, 170, 170, 0.6);
+    background-color: $col-primary;
+  }
+  
+  .Country select option {
+    padding: 30px;
+  }
+

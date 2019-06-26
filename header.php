@@ -13,15 +13,17 @@
 
     <div class="navbar navbar-default nav-bar" role="navigation">
       <div class="container">
-      <img src="img/Method.png" alt="logo">
+      <img src="<?php bloginfo('template_directory'); ?>/images/Method.png" alt="Logo">
         <?php 
           $args = array(
           	'menu'        => 'header-menu',            
             'menu_class'  => 'nav navbar-nav',
+            'menu_id'     => 'navBar',
             'container'   => false
           );
           wp_nav_menu( $args );
-        ?>  
+        ?>
+        <i class="fas fa-search fa-2x"></i>
       </div>  <!--  /.container  -->
     </div>
 
