@@ -5,6 +5,15 @@ function clearContents(element) {
 function grandparent(element) {
    return element.parent().parent();
 }
+function myFunction() {
+   var x = document.getElementById("fa-search-bar");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
+ }
+
 
 jQuery(document).ready(function($) {
    // const main = getElementByTagName("body")[0];
@@ -35,4 +44,9 @@ jQuery(document).ready(function($) {
   } else {
       $('body').addClass('space');
   }
+  $( ".fa-search" ).click(function() {
+   console.log( "Handler for .click() called." );
+//    $('.search-bar').addClass('vis');
+//    $('.fa-search').addClass('-search_pos');   
+})
 });

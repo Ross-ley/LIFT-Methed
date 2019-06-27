@@ -191,7 +191,7 @@ h3 {
 .findOutMore {
   font-size: 20px;
   position: absolute;
-  top: 64%;
+  top: 80%;
   left: 46%;
   font-weight: bold;
 }
@@ -211,7 +211,7 @@ body .fa-chevron-down {
   position: absolute;
   font-size: 100px;
   left: 48%;
-  top: 65%;
+  top: 80%;
 }
 
 body .fa-chevron-down:hover {
@@ -720,6 +720,22 @@ body .fa-chevron-down:hover {
 
 .nav-bar .fa-search:hover {
   cursor: pointer;
+}
+
+.nav-bar .-search_pos {
+  position: relative;
+  top: 15px;
+}
+
+.nav-bar .vis {
+  display: block;
+}
+
+.nav-bar .blank {
+  position: relative;
+  top: 15px;
+  color: red;
+  display: none;
 }
 
 footer {

@@ -23,7 +23,10 @@
           );
           wp_nav_menu( $args );
         ?>
-        <i class="fas fa-search fa-2x"></i>
+        <span>
+        <i class="fas fa-search fa-2x" onclick="myFunction()" ></i>
+        <input type="text" name="search" placeholder="Search.." class="blank" id="fa-search-bar">
+        </span>
       </div>  <!--  /.container  -->
     </div>
 
