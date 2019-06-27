@@ -3,10 +3,16 @@
     font-family: Montserrat, Arial;
 }
 
-a:hover {
-    text-decoration: none;
-}
 
+a {
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+}
 
 section {
 

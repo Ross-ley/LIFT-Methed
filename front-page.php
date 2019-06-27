@@ -29,7 +29,7 @@
                 </div>
                 <div class="row">
                     <div class="ser col-12 col-sm-6 col-lg-3">
-						<a class="anchor ser-con" href="#">
+						<a class="anchor ser-con" href="<?php echo get_permalink( get_page_by_title( 'Digital' ) ); ?>">
 							<span class="ser-ico"><i class="fas fa-handshake"></i></span>
 							<h3>Digital</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, illum!</p>
@@ -37,7 +37,7 @@
 						</a>
 					</div>
                     <div class="ser col-12 col-sm-6 col-lg-3">
-						<a class="anchor ser-con" href="#">
+						<a class="anchor ser-con" href="<?php echo get_permalink( get_page_by_title( 'Consultancy' ) ); ?>">
 							<span class="ser-ico"><i class="fas fa-desktop"></i></span>
 							<h3>Consultancy</h3>
 							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, impedit.</p>
@@ -45,7 +45,7 @@
 						</a>
 					</div>
                     <div class="ser col-12 col-sm-6 col-lg-3">
-						<a class="anchor ser-con" href="#">
+						<a class="anchor ser-con" href="<?php echo get_permalink( get_page_by_title( 'Brand' ) ); ?>">
 							<span class="ser-ico"><i class="fas fa-lightbulb"></i></span>
 							<h3>Brand</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, itaque?</p>
@@ -53,9 +53,9 @@
 						</a>
 					</div>
                     <div class="ser col-12 col-sm-6 col-lg-3">
-						<a class="anchor ser-con" href="#">
+						<a class="anchor ser-con" href="<?php echo get_permalink( get_page_by_title( 'PR' ) ); ?>">
 							<span class="ser-ico"><i class="fas fa-bullhorn"></i></span>
-							<h3>Consultancy</h3>
+							<h3>PR</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, optio.</p>
 							<span class="ser-btn">Read More</span>
 						</a>
@@ -121,7 +121,7 @@
 					<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
 				</div>
-				<button>find out more</button>
+				<a href="<?php echo get_permalink( get_page_by_title( 'Testimonials' ) ); ?>"><button>find out more</button></a>
 			</div>
 			<div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
 				<img  src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
@@ -134,7 +134,7 @@
 					<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
 				</div>
-				<button>find out more</button>
+				<a href="<?php echo get_permalink( get_page_by_title( 'Testimonials' ) ); ?>"><button>find out more</button></a>
 			</div>
 			<div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
 				<img  src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
@@ -147,7 +147,7 @@
 					<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
 				</div>
-				<button>find out more</button>
+				<a href="<?php echo get_permalink( get_page_by_title( 'Testimonials' ) ); ?>"><button>find out more</button></a>
 			</div>
 			<div class="testimonial-img-bg col-md-5 col-lg-3  d-none d-md-block">
 				<img  src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
@@ -157,40 +157,7 @@
 	</div>
 </section> 	<!--  /.section-testimonials  -->
 
-
-<section class="section-news">
-	<h2>latest news</h2>
-	<p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetuer sit elit</p>	<!--  sub heading  -->
-	<div class="container">		
-		<div class="row overflow-hidden justify-content-between">
-
-			<?php
-			$args = array(
-						'poast-per_page' => 3
-					);
-			$the_query = new WP_Query( $args );	
-			?>
-
-			<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>	<!--  LOOP START  -->
-			<div class="col-md-6 col-lg-4 news-card">
-				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-				<div class="news-card-content">
-					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-					<p><?php echo the_time('F jS, Y'); ?> </p>
-					<div class="news-card-bottom-row">	<!--  wrapper to add space between elements  -->
-						<a href="<?php the_permalink(); ?>"><button type="button">design</button></a>
-						<div>
-							<small>by</small>
-							<img src="<?php bloginfo('template_directory'); ?>/images/logo-sm.png" alt="Method Consultancy">
-						</div>
-					</div>	 <!--  ./news-card-bottom-row  -->
-				</div>	<!--  ./news-card-content  -->
-			</div>	<!--  ./col  -->
-			<?php endwhile; endif; ?>	<!--  LOOP END  -->
-			<?php wp_reset_postdata(); ?>
-		</div>
-	</div>
-</section>
+<?php get_template_part('content', 'latestnews'); ?>
 
 <section class="section-contact">
 	<div class="container">

@@ -2,6 +2,8 @@
 
 <div class="container" role="main">
 
+    <h1>LINK TO ALL NEWS</h1>
+
     <div class="row">
 
         <div class="col-md-8">

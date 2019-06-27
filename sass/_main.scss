@@ -361,10 +361,13 @@ body
             border-radius: 50%;
         }
 
+        a {
+            display: block;
+            margin-top: auto;
+        }
+
         button {
             @include button($col-primary);
-
-            margin-top: auto;
         }
 
     }

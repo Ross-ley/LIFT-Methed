@@ -1,6 +1,5 @@
 <div class="col-md-4">
 	<?php if ( ! dynamic_sidebar( 'primary' ) ): ?>
-	<h3>Widget Setup</h3>
-	<p>Please add widgets to the page widget to have them display here</p>
+	<h3>This is my own custom sidebar</h3>
 	<?php endif; ?>
 </div>

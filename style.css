@@ -169,8 +169,13 @@ input[type="search"]::-webkit-search-decoration {
   font-family: Montserrat, Arial;
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 section {
@@ -550,6 +555,10 @@ body .fa-chevron-down {
     width: 100%;
     border-radius: 50%;
   }
+  .testimonial-card a {
+    display: block;
+    margin-top: auto;
+  }
   .testimonial-card button {
     background-color: #ff7800;
     color: white;
@@ -561,7 +570,6 @@ body .fa-chevron-down {
     font-weight: 600;
     padding: 3px 13px 0 13px;
     height: 35px;
-    margin-top: auto;
   }
   .testimonial-card button:hover {
     background-color: #e06a00;
