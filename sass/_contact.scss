@@ -2,10 +2,16 @@
 .section-contact {
 
     background-color: #007eff;
-    padding: 40px 0;
+    //padding: 40px 0;
 
-    h1 {  // Main heading
+    h2 {  // Main heading
         color: white;
+
+        margin-bottom: 30px;
+
+        @include mq('l') {
+          margin-bottom: 50px;
+        }
     }
 
     label { // Field label
@@ -36,6 +42,7 @@ textarea {
     font-size: $font-sz-6;
     resize: none;
     height: 150px;
+    color: grey;
 }
 
 span.wpcf7-list-item {
@@ -51,6 +58,7 @@ input[type="submit"] {
     height: 50px;
     padding: 0 40px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 // Submit processing gif

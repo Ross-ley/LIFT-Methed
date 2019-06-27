@@ -8,12 +8,12 @@
 <section class="section-promotion">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-sm-8 col-lg-7 promo-text">
+			<div class="col-sm-8 col-lg-8 promo-text">
 				<h3>Grow your business today without stress so you can focus on what matters</h3>
 				<p>We support companies of all sizes from-start ups to multi-nationals</p>
 				<p>Specialising in marketing strategy, planning and implementation we can provide you with everything you need to execute your business.</p>
 			</div>
-			<div class="col-4 col-lg-5 d-none d-sm-block">
+			<div class="col-4 col-lg-4 d-none d-sm-block">
 				<img class="promo-img" src="<?php bloginfo('template_directory'); ?>/images/jump.png" alt="Method Consultancy">
 			</div>
 		</div>
@@ -24,48 +24,48 @@
 <section class="our-services">
             <div class="container">
                 <div class="ser-title">
-                    <h1>Our Services</h1>
+                    <h2>Our Services</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, animi.</p>
                 </div>
                 <div class="row">
-                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
-                        <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
-                            <div class="ser-ico"><i class="fas fa-handshake"></i></div>
-                            <h3>Consultancy</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, illum!</p>
-                            <div href="#" class="ser-btn">Read More</div>
-						</a></div>
-                    </div>
-                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
-                        <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
-                            <div class="ser-ico"><i class="fas fa-desktop"></i></div>
-                            <h3>Digital</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, impedit.</p>
-                            <div href="#" class="ser-btn">Read More</div>
-							</a></div>
-                    </div>
-                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
-                        <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
-                            <div class="ser-ico"><i class="fas fa-lightbulb"></i></div>
-                            <h3>Brand</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, itaque?</p>
-                            <div href="#" class="ser-btn">Read More</div>
-							</a></div>
-                    </div>
-                    <div class="ser col-12 col-sm-6 col-lg-3"><a class="d-block" href="#">
-                        <div class="ser-con"> <!-- inner wrapper for easier background and spacing -->
-                            <div class="ser-ico"><i class="fas fa-bullhorn"></i></div>
-                            <h3>PR</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, optio.</p>
-                            <div href="#" class="ser-btn">Read More</div>
-							</a></div>
-                    </div>
+                    <div class="ser col-12 col-sm-6 col-lg-3">
+						<a class="anchor ser-con" href="#">
+							<span class="ser-ico"><i class="fas fa-handshake"></i></span>
+							<h3>Digital</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, illum!</p>
+							<span class="ser-btn">Read More</span>
+						</a>
+					</div>
+                    <div class="ser col-12 col-sm-6 col-lg-3">
+						<a class="anchor ser-con" href="#">
+							<span class="ser-ico"><i class="fas fa-desktop"></i></span>
+							<h3>Consultancy</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, impedit.</p>
+							<span class="ser-btn">Read More</span>
+						</a>
+					</div>
+                    <div class="ser col-12 col-sm-6 col-lg-3">
+						<a class="anchor ser-con" href="#">
+							<span class="ser-ico"><i class="fas fa-lightbulb"></i></span>
+							<h3>Brand</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, itaque?</p>
+							<span class="ser-btn">Read More</span>
+						</a>
+					</div>
+                    <div class="ser col-12 col-sm-6 col-lg-3">
+						<a class="anchor ser-con" href="#">
+							<span class="ser-ico"><i class="fas fa-bullhorn"></i></span>
+							<h3>Consultancy</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, optio.</p>
+							<span class="ser-btn">Read More</span>
+						</a>
+					</div>										
                 </div> <!-- row endof -->
             </div> <!-- container endof -->
         </section>
 
 <section class="section-expertise container">
-    <h1 class="d-none d-md-block">Our Expertise</h1>
+    <h2 class="d-none d-md-block">Our Expertise</h2>
     <p class="d-none d-md-block">We have clients from franchising, education and the design and manufacturing industries.</p>
     <div class="row d-none d-md-flex">
 		<img class="col-3" src="<?php bloginfo('template_directory'); ?>/images/bite.png" alt="Method Consultancy">
@@ -111,14 +111,16 @@
 </section>
 <section class="section-testimonials">
 	<!-- Testimials Mobile  -->
-	<h1>our testimonials</h1>
+	<h2>our testimonials</h2>
 
 	<div class="container">
 		<div class="testimonial-card row">
-			<div class="testimonial-content col-md-7 col-lg-9">
-				<h2>Meet Josh</h2>
-				<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
+			<div class="testimonial-content col-md-7 col-lg-9 d-flex flex-column">
+				<div>
+					<h3>Meet Josh</h3>
+					<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
+				</div>
 				<button>find out more</button>
 			</div>
 			<div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
@@ -126,10 +128,12 @@
 			</div>
 		</div>
 		<div class="testimonial-card row testimonial-img-left">
-			<div class="testimonial-content col-md-7 col-lg-9">
-				<h2>Meet Clair</h2>
-				<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
+			<div class="testimonial-content col-md-7 col-lg-9 d-flex flex-column">
+				<div>
+					<h3>Meet Clair</h3>
+					<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
+				</div>
 				<button>find out more</button>
 			</div>
 			<div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
@@ -137,10 +141,12 @@
 			</div>
 		</div>
 		<div class="testimonial-card row">
-			<div class="testimonial-content col-md-7 col-lg-9">
-				<h2>Meet Ryan</h2>
-				<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
+			<div class="testimonial-content col-md-7 col-lg-9 d-flex flex-column">
+				<div>
+					<h3>Meet Ryan</h3>
+					<img  class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima, corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos deleniti eligendi aperiam possimus</p>
+				</div>
 				<button>find out more</button>
 			</div>
 			<div class="testimonial-img-bg col-md-5 col-lg-3  d-none d-md-block">
@@ -151,59 +157,44 @@
 	</div>
 </section> 	<!--  /.section-testimonials  -->
 
+
 <section class="section-news">
-	<h1>latest news</h1>
+	<h2>latest news</h2>
 	<p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetuer sit elit</p>	<!--  sub heading  -->
-	<div class="container">
-		<div class="row justify-content-between">	<!--  0 width: single column, md width: two column, lg width: thee column -->
-			<div class="col-md-6 col-lg-4 news-card">	
-				<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/news-1.png" alt="News One"></a>
-				<div class="news-card-content">
-					<a href="#"><h3>Lorem ipsum dolor sit amet, consectetuer adipiscing...</h3></a>
-					<p>may 25, 2019</p>
-					<div class="news-card-bottom-row">	<!--  wrapper to add space between elements  -->
-						<a href="#"><button type="button">design</button></a>
-						<div>
-							<small>by</small>
-							<img src="<?php bloginfo('template_directory'); ?>/images/logo-sm.png" alt="Method Consultancy">
-						</div>
-					</div>
-				</div>
-			</div>	<!--  ./col  -->
+	<div class="container">		
+		<div class="row overflow-hidden justify-content-between">
+
+			<?php
+			$args = array(
+						'poast-per_page' => 3
+					);
+			$the_query = new WP_Query( $args );	
+			?>
+
+			<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>	<!--  LOOP START  -->
 			<div class="col-md-6 col-lg-4 news-card">
-				<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/news-2.png" alt="News One"></a>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 				<div class="news-card-content">
-					<a href="#"><h3>Lorem ipsum dolor sit amet, consectetuer adipiscing...</h3></a>
-					<p>may 25, 2019</p>
-					<div class="news-card-bottom-row">
-						<a href="#"><button type="button">education</button></a>
+					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+					<p><?php echo the_time('F jS, Y'); ?> </p>
+					<div class="news-card-bottom-row">	<!--  wrapper to add space between elements  -->
+						<a href="<?php the_permalink(); ?>"><button type="button">design</button></a>
 						<div>
 							<small>by</small>
 							<img src="<?php bloginfo('template_directory'); ?>/images/logo-sm.png" alt="Method Consultancy">
 						</div>
-					</div>
-				</div>
+					</div>	 <!--  ./news-card-bottom-row  -->
+				</div>	<!--  ./news-card-content  -->
 			</div>	<!--  ./col  -->
-			<div class="col-lg-4 news-card d-none d-lg-block">
-				<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/news-3.png" alt="News One"></a>
-				<div class="news-card-content">
-					<a href="#"><h3>Lorem ipsum dolor sit amet, consectetuer adipiscing...</h3></a>
-					<p>may 25, 2019</p>
-					<div class="news-card-bottom-row">
-						<a href="#"><button type="button">digital</button></a>
-						<div>
-							<small>by</small>
-							<img src="<?php bloginfo('template_directory'); ?>/images/logo-sm.png" alt="Method Consultancy">
-						</div>
-					</div>
-				</div>
-			</div>	<!--  ./col  -->
-		</div>	<!--  ./row  -->
-	</div>	<!--  /.container  -->
-</section>	<!--  /.section-news  -->
+			<?php endwhile; endif; ?>	<!--  LOOP END  -->
+			<?php wp_reset_postdata(); ?>
+		</div>
+	</div>
+</section>
+
 <section class="section-contact">
 	<div class="container">
-		<h1>contact us today</h1>
+		<h2>contact us today</h2>
 		<?php echo do_shortcode( '[contact-form-7 id="51" title="Contact form 1"]' ); ?>
 	</div>
 </section>
