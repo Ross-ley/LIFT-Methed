@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 <div class="header-img-container">
-	<img class="header-img" src="<?php bloginfo('template_directory'); ?>/images/Layer_2.jpg" alt="Method Consultancy">
-	<i class="fas fa-chevron-down"></i>
-	<p class="findOutMore">Find Out More</p>
+	<div class="container">
+	<h1>Marketing Consultancy</h1>
+	<p>Catering for all your needs to start a business.</p>
+	<a id="findOutMore" href="#">
+		<p>Find Out More</p>
+		<i class="fas fa-chevron-down"></i>
+	</a>
+	</div>
 </div>
 
 <section class="section-promotion">
