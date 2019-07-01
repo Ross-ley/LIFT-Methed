@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-md fixed-top">
         <nav class="container">
-            <a class="navbar-brand" href="#"><img class="navbar-logo"
+            <a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="navbar-logo"
                     src="<?php bloginfo('template_directory'); ?>/images/Method.png" alt="Logo"></a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <?php 

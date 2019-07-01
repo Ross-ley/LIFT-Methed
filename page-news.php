@@ -6,15 +6,31 @@
 
 	    	<div class="col-md-8">
 
-			    <div class="page-header">				    	
+			    <div class="page-header">	
 			    	<h1><?php wp_title( '' ); ?></h1>
-			    	<p>This is a category archive</p>
 			    </div>
 
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article class="post">
 				    
 			    	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+			    	<?php if( has_post_format( 'image' )): ?>
+
+			    		<?php the_post_thumbnail('medium'); ?>
+
+			    	<?php elseif ( has_post_format( 'quote' )): ?>
+
+			    		<blockquote>
+							<?php the_excerpt(); ?>
+			    		</blockquote>
+
+			    	<?php else: ?>
+
+						<?php the_excerpt(); ?>
+
+					<?php endif; ?>
+
 
 			    	<p class="meta">
 			    		By <?php the_author_posts_link(); ?> 
@@ -30,9 +46,7 @@
 
 	    	<?php get_sidebar( 'blog' ); ?>
 
-		</div>
-		
-		<?php get_template_part('content', 'latestnews'); ?>
+        </div>
 
     </div>
 

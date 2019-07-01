@@ -6,45 +6,56 @@
  ?>
 <?php get_header(); ?>
 
-    <div class="container" role="main">
+<section class="ser-min our-services">
+    <div class="container">
+        <div class="ser-min-inner">
+            <div class="ser">
+                <a id="<?php if(is_page('Digital')) echo 'ser-current';?>" class="anchor ser-con"
+                    href="<?php echo get_permalink( get_page_by_title( 'Digital' ) ); ?>">
+                    <span class="ser-ico"><i class="fas fa-handshake"></i></span>
+                    <h3>Digital</h3>
+                </a>
+            </div>
+            <div class="ser">
+                <a id="<?php if(is_page('Consultancy')) echo 'ser-current';?>" class="anchor ser-con"
+                    href="<?php echo get_permalink( get_page_by_title( 'Consultancy' ) ); ?>">
+                    <span class="ser-ico"><i class="fas fa-desktop"></i></span>
+                    <h3>Consultancy</h3>
+                </a>
+            </div>
+            <div class="ser">
+                <a id="<?php if(is_page('Brand')) echo 'ser-current';?>" class="anchor ser-con"
+                    href="<?php echo get_permalink( get_page_by_title( 'Brand' ) ); ?>">
+                    <span class="ser-ico"><i class="fas fa-lightbulb"></i></span>
+                    <h3>Brand</h3>
+                </a>
+            </div>
+            <div class="ser">
+                <a id="<?php if(is_page('PR')) echo 'ser-current';?>" class="anchor ser-con"
+                    href="<?php echo get_permalink( get_page_by_title( 'PR' ) ); ?>">
+                    <span class="ser-ico"><i class="fas fa-bullhorn"></i></span>
+                    <h3>PR</h3>
+                </a>
+            </div>
+        </div> <!-- row endof -->
+    </div> <!-- container endof -->
+</section>
 
-	<h1>SERVICE PAGE TEMPLATE</h1>
+<div class="container py-5" role="main">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<div class="row">
-
-	    	<div class="col-md-8">
-			
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-				    <div class="page-header">	
-				    	<h1><?php the_title(); ?></h1>	
-				    </div>
-
-					<?php the_content(); ?>
-
-				<?php endwhile; endif; ?>
-
-				<?php 
-				    $args = array(
-				        'post_type' => 'portfolio'
-				    );
-				    $the_query = new WP_Query( $args );		    
-				?>
-				<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>	
-
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-				<?php endwhile; endif; ?>
-	    	
-	    	</div>
-
-	    	<?php get_sidebar(); ?>
-
-	    </div>    	
-
-
-	    </div>
-
+    <div class="service-header">
+        <h1><?php the_title(); ?></h1>
     </div>
+
+    <?php the_content(); ?>
+
+    <?php endwhile; endif; ?>
+
+
+    <?php get_template_part('content', 'expertise'); ?>
+
+
+</div>
 
 <?php get_footer(); ?>
