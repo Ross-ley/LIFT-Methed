@@ -485,6 +485,8 @@
 }
 
 .news-card-content {
+    height: 200px;
+
     padding: 28px 22px;
 
     @include mq('m') {

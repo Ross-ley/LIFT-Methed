@@ -109,8 +109,11 @@
     padding-bottom: 10px;
 }
 
-
-
+// Darkens nav bar when page is scrolled
+.fixed-top.scrolled {
+    background-color: rgba(black, 0.9) !important;
+    transition: background-color 200ms linear;
+}
 
 
 .nav-bar

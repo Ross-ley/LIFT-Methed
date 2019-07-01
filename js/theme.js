@@ -40,11 +40,12 @@ jQuery(document).ready(function($) {
    $('.wpcf7-form').addClass('row');
 
 // asks if page is on home 
-   if ( $('body').hasClass('home')) {
+   if ( $('body').hasClass('home') /*|| $('.overlap-nav')*/) {
       $('body').addClass('null');
   } else {
       $('body').addClass('space');
   }
+  
   $( ".fa-search" ).click(function() {
    console.log( "Handler for .click() called." );
    //    $('.search-bar').addClass('vis');
@@ -57,5 +58,13 @@ jQuery(document).ready(function($) {
       $(this).addClass('nav-item active');
       $(this).first().addClass('nav-link')
    });
+
+
+   // Darken nav bar on scroll 
+   $(document).scroll(function () {
+      let $nav = $(".fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+   });
+
 
 });
