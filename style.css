@@ -1015,6 +1015,19 @@ footer address {
   background-color: #0077b5;
 }
 
+body {
+  padding-top: 5rem;
+}
+
+body .fake {
+  color: red;
+}
+
+body .grey-back {
+  background-color: #E8E8E8;
+  width: 100%;
+}
+
 .section-contact {
   background-color: #007eff;
 }
