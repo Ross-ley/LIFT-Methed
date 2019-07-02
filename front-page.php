@@ -122,11 +122,6 @@
 
 <?php get_template_part('content', 'latestnews'); ?>
 
-<section class="section-contact">
-	<div class="container">
-		<h2>contact us today</h2>
-		<?php echo do_shortcode( '[contact-form-7 id="51" title="Contact form 1"]' ); ?>
-	</div>
-</section>
+<?php get_template_part('content', 'contact'); ?>
 
 <?php get_footer(); ?>

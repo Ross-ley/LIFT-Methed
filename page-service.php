@@ -6,7 +6,17 @@
  ?>
 <?php get_header(); ?>
 
-<section class="ser-min our-services">
+<div class="ser-banner overlap-nav" class="ser-banner">
+    <div class="container">
+        <h1><?php the_title(); ?></h1>
+        <!-- <p>Catering for all your needs to start a business.</p> -->
+    </div>
+
+</div>
+
+
+
+<section class="ser-min our-services d-none d-lg-block">
     <div class="container">
         <div class="ser-min-inner">
             <div class="ser">
@@ -32,7 +42,7 @@
             </div>
             <div class="ser">
                 <a id="<?php if(is_page('PR')) echo 'ser-current';?>" class="anchor ser-con"
-                    href="<?php echo get_permalink( get_page_by_title( 'PR' ) ); ?>">
+                    href="<?php echo get_permalink( get_page_by_title( 'Public Relations' ) ); ?>">
                     <span class="ser-ico"><i class="fas fa-bullhorn"></i></span>
                     <h3>PR</h3>
                 </a>
@@ -42,20 +52,19 @@
 </section>
 
 <div class="container py-5" role="main">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <div class="entry-content">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <div class="service-header">
-        <h1><?php the_title(); ?></h1>
+        <?php the_content(); ?>
+
+        <?php endwhile; endif; ?>
     </div>
-
-    <?php the_content(); ?>
-
-    <?php endwhile; endif; ?>
-
-
-    <?php get_template_part('content', 'expertise'); ?>
-
-
 </div>
+
+
+    <?php get_template_part('content', 'contact'); ?>
+
+
+
 
 <?php get_footer(); ?>
