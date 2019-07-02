@@ -3,7 +3,7 @@
 <section class="section-news">
 	<h2>all news</h2>
 	<div class="container">		
-		<div class="row overflow-hidden">
+		<div class="row news-page">
 
 			<?php
 			$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -39,13 +39,15 @@
 		</div>
 
 		<!-- Pagination -->
-		<div class="d-flex flex-row justify-content-between">
-			<p><?php previous_posts_link( ' Previous page' );?></p>
+		<div class="pagination d-flex flex-row justify-content-between">
+			<p><?php previous_posts_link( 'Previous page' );?></p>
 			<p><?php next_posts_link( 'Next page', $the_query->max_num_pages ); ?> </p>
 			<?php wp_reset_postdata(); ?>
+
+
+
 		</div>
 	</div>
 </section>
-
 
 <?php get_footer(); ?>

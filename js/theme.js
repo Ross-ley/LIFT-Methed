@@ -66,5 +66,10 @@ jQuery(document).ready(function($) {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
    });
 
-
+   // Screen scroll
+   $("#findOutMore").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#more").offset().top},
+          'slow');
+  });
 });

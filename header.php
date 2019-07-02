@@ -12,11 +12,11 @@
 
 <body <?php body_class(); ?>>
 
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <nav class="container">
             <a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="navbar-logo"
                     src="<?php bloginfo('template_directory'); ?>/images/Method.png" alt="Logo"></a>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse container" id="navbarCollapse">
                 <?php 
               $args = array(
                 'menu'        => 'header-menu',            

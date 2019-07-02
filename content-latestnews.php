@@ -2,7 +2,7 @@
 	<h2><a href="<?php echo get_permalink( get_page_by_title( 'News' ) ); ?>">latest news</a></h2>
 	<p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetuer sit elit</p>	<!--  sub heading  -->
 	<div class="container">		
-		<div class="row overflow-hidden justify-content-between">
+		<div class="row news-latest justify-content-between">
 
 			<?php
 			$args = array(

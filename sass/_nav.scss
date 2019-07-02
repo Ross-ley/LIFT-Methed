@@ -1,4 +1,3 @@
-
 .navbar {
     background-color: rgba(black, 0.6);
     align-items: flex-end;
@@ -15,6 +14,7 @@
 .navbar-brand {
     margin-top: 1rem;
     margin-bottom: 0.9rem;
+    margin-left: 1rem;
 }
 
 // Wrapper for navigation links
@@ -32,7 +32,9 @@
 
 // Individual navigation links <li>
 .menu-item {
-    @include mq('l') {
+    font-size: 1.4rem;
+
+    @include mq('md') {
         margin-left: 30px;
     }
 
