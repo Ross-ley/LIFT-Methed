@@ -62,9 +62,9 @@
     }
 }
 
-// .space{
-//     padding-top: 7rem;
-// }
+.space{
+    padding-top: 2.6rem;
+}
 
 ////////////////////////////////////////
 /// Promotion
@@ -432,6 +432,11 @@
     }
 
 }
+@media (max-width: 770px){
+    .space{
+        padding-top: 1.7rem;
+    }
+}
 
 @media only screen and (min-width: map-get($breakpoints, 'xl')) {
     .testimonial-content {
@@ -488,7 +493,7 @@
     padding: 28px 22px;
 
     @include mq('m') {
-        padding: 25px 20px 30px 35px;
+        padding: 25px 20px 30px 20px;
     }
 
     background-color: white;

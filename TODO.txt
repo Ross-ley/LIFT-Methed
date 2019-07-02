@@ -13,3 +13,6 @@ Data Policy
 Terms & Conditions
 Cookie Policy
 Sitemap
+
+
+Underline footer links on hover
