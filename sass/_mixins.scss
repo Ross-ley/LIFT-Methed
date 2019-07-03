@@ -28,23 +28,23 @@
 
  @mixin mq($break) {
 
-    @if $break == 's' {
-        @media (min-width: map-get($breakpoints, 's')) {
+    @if $break == 'sm' {
+        @media only screen and (min-width: map-get($breakpoints, 'sm')) {
             @content;
         }
     }
-    @else if $break == 'm' {
-        @media (min-width: map-get($breakpoints, 'm')) {
+    @else if $break == 'md' {
+        @media only screen and (min-width: map-get($breakpoints, 'md')) {
             @content;
         }				
     }
-    @else if $break == 'l' {
-        @media (min-width: map-get($breakpoints, 'l')) {
+    @else if $break == 'lg' {
+        @media only screen and (min-width: map-get($breakpoints, 'lg')) {
             @content;
         }				
     }
     @else if $break == 'xl' {
-        @media (min-width: map-get($breakpoints, 'xl')) {
+        @media only screen and (min-width: map-get($breakpoints, 'xl')) {
             @content;
         }				
     }

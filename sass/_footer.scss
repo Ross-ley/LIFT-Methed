@@ -26,7 +26,7 @@ footer {
 
     text-align: center;
 
-    @include mq('m') {
+    @include mq('md') {
         text-align: left;
     }
 }
@@ -63,7 +63,7 @@ footer {
 
         margin: 0 auto;
 
-        @include mq('m') {
+        @include mq('md') {
             margin: 0;
         }
 
@@ -79,7 +79,7 @@ footer {
     li {
         height: 60px;
 
-        @include mq('m') {
+        @include mq('md') {
             margin-left: 10px;
         }
     }

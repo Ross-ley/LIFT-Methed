@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="ser">
-                <a id="<?php if(is_page('PR')) echo 'ser-current';?>" class="anchor ser-con"
+                <a id="<?php if(is_page('Public Relations')) echo 'ser-current';?>" class="anchor ser-con"
                     href="<?php echo get_permalink( get_page_by_title( 'Public Relations' ) ); ?>">
                     <span class="ser-ico"><i class="fas fa-bullhorn"></i></span>
                     <h3>PR</h3>

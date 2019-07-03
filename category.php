@@ -13,12 +13,12 @@
 			
 			<h3 class="pb-2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-			<div class="row">
-				<?php if(has_post_thumbnail()) {  the_post_thumbnail('full', 'class=col-4 w-100 h-auto'); } else { ?>
-							<img class="col-4" src="<?php bloginfo('template_directory'); ?>/images/news-default.png" alt="Method Consultancy">
+			<div>
+				<?php if(has_post_thumbnail()) {  the_post_thumbnail('full', 'w-100 h-auto'); } else { ?>
+							<img src="<?php bloginfo('template_directory'); ?>/images/news-default.png" alt="Method Consultancy">
 						<?php } ?>
 
-				<p class="meta col-8">
+				<p>
 					By <?php the_author_posts_link(); ?> 
 					on <?php echo the_time('l, F jS, Y'); ?> 
 					<a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
@@ -28,9 +28,8 @@
 		<?php endwhile; endif; ?>
 
 
-		
-		<?php get_template_part('content', 'latestnews'); ?>
-
-    </div>
+	</div>
+	
+	<?php get_template_part('content', 'latestnews'); ?>
 
 <?php get_footer(); ?>

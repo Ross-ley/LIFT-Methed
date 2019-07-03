@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
    $('.wpcf7-form').addClass('row');
 
 // asks if page is on home 
-   if ( $('body').hasClass('home') /*|| $('.overlap-nav')*/) {
+   if ( $('body').hasClass('home')) {
       $('body').addClass('null');
   } else {
       $('body').addClass('space');
@@ -66,5 +66,10 @@ jQuery(document).ready(function($) {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
    });
 
-
+   // Screen scroll
+   $("#findOutMore").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#more").offset().top},
+          'slow');
+  });
 });

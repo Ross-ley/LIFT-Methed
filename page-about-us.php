@@ -66,4 +66,7 @@
 		</div>
     </div>
 </div>
+<div>
+	<?php get_content-contact(); ?>
+</div>
 <?php get_footer(); ?>

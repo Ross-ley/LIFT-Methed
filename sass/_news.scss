@@ -1,0 +1,31 @@
+.pagination {
+    font-size: $font-sz-5;
+    font-weight: 600;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+// Hide last article when displaying an even number of columns
+@media only screen and (min-width: map-get($breakpoints, 'md')) {
+    .news-page .news-card:nth-of-type(9) {
+        display: none;
+    }
+
+    .news-latest .news-card:nth-of-type(3) {
+        display: none;
+    }
+}
+
+// Reveal last article when displaying an odd number of columns
+@media only screen and (min-width: map-get($breakpoints, 'lg')) {
+    .news-page .news-card:nth-of-type(9) {
+        display: block;
+    }
+
+    .news-latest .news-card:nth-of-type(3) {
+        display: block;
+    }
+}
