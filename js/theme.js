@@ -40,6 +40,7 @@ jQuery(document).ready(function($) {
    $('.wpcf7-form').addClass('row');
 
 // asks if page is on home 
+console.log('CHECKING IF body HAS CLASS .home');
    if ( $('body').hasClass('home')) {
       $('body').addClass('null');
   } else {

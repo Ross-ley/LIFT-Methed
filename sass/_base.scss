@@ -57,10 +57,14 @@ h3 {
 }
 
 // Vertical spacing
-body{
-    .space {
-        padding-top: 40px;  // altered from 72 px
-    }
+// body{
+//     .space {
+//         padding-top: 40px;  // altered from 72 px
+//     }
+// }
+
+body.space {
+    padding-top: 72px;
 }
 
 
