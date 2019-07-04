@@ -67,9 +67,9 @@ jQuery(document).ready(function($) {
    });
 
    // Screen scroll
-   $("#findOutMore").click(function() {
+   $("#find-out-more").click(function() {
       $('html,body').animate({
-          scrollTop: $("#more").offset().top},
+          scrollTop: $("#find-out-more-destination").offset().top},
           'slow');
   });
 });

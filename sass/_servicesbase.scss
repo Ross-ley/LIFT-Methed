@@ -1,0 +1,58 @@
+// Base styles shared by front page and miniture version of services cards.
+
+.our-services-base {
+    background-color: #DADADA;
+}
+
+.ser-base {
+    text-align: center;
+    color: white;
+
+    &:hover {
+        color: $col-primary;
+
+        .ser-con-base {
+            background-color: white;
+            h3, p {
+                font-weight: 800;   // Makes font eaiser to read with white background
+            }
+        }
+        
+        .ser-btn, .ser-ico-base {
+            background-color: $col-primary;
+            color: white;
+        }
+    }
+}
+
+// Service card content <a>
+.ser-con-base {
+    background-color: $col-primary;
+    border-radius: 10px;
+    display: block;
+
+    transition: background-color 80ms ease-in;
+
+    p {
+        font-weight: 500;
+    }
+}
+
+// Service card icon wrapper
+.ser-ico-base {
+    display: inline-block;
+    color: $col-primary;
+    background-color: rgba(white, .8);                        
+    border-radius: 50%;        
+}
+
+@media only screen and (min-width: map-get($breakpoints, 'lg')) {
+
+    .our-services-base {
+        background-color: $col-primary;      // Background color changes to card color to mask shape.
+
+        .ser-base h3 {
+            font-weight: 600;
+        }
+    }
+}

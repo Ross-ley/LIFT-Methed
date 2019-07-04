@@ -223,10 +223,63 @@ body.space {
   padding-top: 72px;
 }
 
-.header-img-container {
+.our-services-base {
+  background-color: #DADADA;
+}
+
+.ser-base {
+  text-align: center;
+  color: white;
+}
+
+.ser-base:hover {
+  color: #ff7800;
+}
+
+.ser-base:hover .ser-con-base {
+  background-color: white;
+}
+
+.ser-base:hover .ser-con-base h3, .ser-base:hover .ser-con-base p {
+  font-weight: 800;
+}
+
+.ser-base:hover .ser-btn, .ser-base:hover .ser-ico-base {
+  background-color: #ff7800;
+  color: white;
+}
+
+.ser-con-base {
+  background-color: #ff7800;
+  border-radius: 10px;
+  display: block;
+  -webkit-transition: background-color 80ms ease-in;
+  transition: background-color 80ms ease-in;
+}
+
+.ser-con-base p {
+  font-weight: 500;
+}
+
+.ser-ico-base {
+  display: inline-block;
+  color: #ff7800;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+  .our-services-base {
+    background-color: #ff7800;
+  }
+  .our-services-base .ser-base h3 {
+    font-weight: 600;
+  }
+}
+
+.banner-large {
   width: 100%;
   height: 80vh;
-  overflow: hidden;
   background-image: url("images/banner.png");
   background-size: cover;
   background-position: center;
@@ -237,71 +290,74 @@ body.space {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.front-header-content {
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
   text-align: center;
 }
 
-.header-img-container h1 {
-  font-size: 3.052rem;
-  margin-bottom: 50px;
+.front-header-content h1 {
+  font-size: 2.8rem;
   line-height: 1.3;
+  margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-img-container h1 {
-    font-size: 4rem;
-    margin-bottom: 30px;
-  }
-}
-
-.header-img-container p {
-  font-size: 1.563rem;
+.front-header-content p {
+  font-size: 1.25rem;
+  padding: 0 10px;
   margin-bottom: 140px;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-img-container p {
-    margin-bottom: 160px;
-  }
-}
-
-.header-img-container .container {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-#findOutMore {
+#find-out-more {
   display: block;
+  width: 200px;
+  margin: 0 auto 20px auto;
+}
+
+#find-out-more span {
   font-size: 1.563rem;
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-weight: 400;
 }
 
-#findOutMore p {
-  margin-bottom: 0;
-}
-
-#findOutMore i {
+#find-out-more i {
   color: #ff7800;
   font-size: 4rem;
 }
 
-.promo-img {
-  border-radius: 50%;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
+@media only screen and (min-width: 576px) {
+  .front-header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  .front-header-content p {
+    font-size: 1.563rem;
+    margin-bottom: 160px;
+  }
 }
 
-.promo-text {
-  text-align: center;
+.promo-text h3 {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.promo-text p {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .promo-text h3 {
+    font-size: 1.563rem;
+  }
+  .promo-text p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -311,97 +367,48 @@ body.space {
   }
 }
 
-.promo-text h3 {
-  margin-bottom: 50px;
-  font-weight: 700;
-}
-
-@media only screen and (min-width: 768px) {
-  .promo-text h3 {
-    font-size: 1.563rem;
-  }
-}
-
-.promo-text p {
-  font-size: 1rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .promo-text p {
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-}
-
-.our-services {
+.ser-front.our-services-base {
   padding: 10px 0 50px 0;
-  background-color: #DADADA;
-  height: auto;
 }
 
-@media only screen and (min-width: 768px) {
-  .our-services {
-    padding: 20px 0 50px 0;
-  }
+.ser-front.our-services-base p {
+  margin-top: 20px;
+  font-size: 1.25rem;
 }
 
-@media only screen and (min-width: 992px) {
-  .our-services {
-    padding: 50px 0 50px 0;
-  }
+.ser-front .ser-base {
+  margin-top: 30px;
 }
 
-.our-services .ser-ico {
-  display: inline-block;
-  color: #FF7900;
-  background-color: rgba(255, 255, 255, 0.8);
+.ser-front .ser-con-base h3 {
+  font-size: 1.25rem;
+  margin: .5rem 0;
+}
+
+.ser-front .ser-con-base p {
+  font-size: 1rem;
+  max-width: 250px;
+  margin: 0 auto 1rem;
+}
+
+.ser-front .ser-ico-base {
   padding-top: .65rem;
   width: 5rem;
   height: 5rem;
   font-size: 2.5rem;
-  border-radius: 50%;
 }
 
-.our-services .ser-title {
+.ser-front .ser-con-base {
+  padding: 30px;
+}
+
+.ser-title {
   display: none;
   text-align: center;
   color: #fff;
 }
 
-.our-services p {
-  margin-top: 20px;
-  font-size: 1.25rem;
-}
-
-.our-services .ser {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.our-services .ser h3, .our-services .ser p {
-  color: white;
-}
-
-.our-services .ser h3 {
-  font-size: 1.25rem;
-  margin: .5rem 0;
-}
-
-.our-services .ser p {
-  font-size: 1rem;
-  font-weight: 500;
-  max-width: 250px;
-  margin: 0 auto 1rem;
-}
-
-.our-services .ser .ser-con {
-  background-color: #FF7900;
-  border-radius: 10px;
-  display: block;
-  padding: 30px;
-}
-
-.our-services .ser .ser-btn {
+.ser-btn {
   width: 180px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.95);
@@ -413,67 +420,44 @@ body.space {
   font-weight: 600;
 }
 
-.our-services .ser .ser-btn:hover {
+.ser-btn:hover {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.our-services .ser:hover .ser-con {
-  background-color: white;
-}
-
-.our-services .ser:hover .ser-btn {
-  background-color: #FF7900;
-  color: white;
-}
-
-.our-services .ser:hover h3, .our-services .ser:hover p {
-  color: #FF7900;
-}
-
-.our-services .ser:hover h3 {
-  font-weight: 800;
-}
-
-.our-services .ser:hover p {
-  font-weight: 800;
-}
-
-.our-services .ser:hover .ser-ico {
-  background-color: #FF7900;
-}
-
-.our-services .ser:hover .ser-ico i {
-  color: white;
+@media only screen and (min-width: 768px) {
+  .ser-front.our-services-base {
+    padding: 20px 0 50px 0;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  .our-services {
-    background-color: #FF7900;
+  .ser-front.our-services-base {
+    padding: 50px 0 50px 0;
   }
-  .our-services .ser-title {
+  .ser-front.our-services-base .ser-title {
     display: block;
   }
-  .our-services .ser-ico {
+  .ser-front.our-services-base .ser-ico-base {
     padding-top: .5rem;
     width: 6rem;
     height: 6rem;
     font-size: 3.5rem;
   }
-  .our-services .ser h3 {
+  .ser-front.our-services-base .ser-base h3 {
     font-weight: 600;
     margin: 1rem 0;
   }
-  .our-services .ser .ser-btn {
+  .ser-front.our-services-base .ser-base .ser-btn {
     font-size: 1.25rem;
     padding: .5rem 1.5rem;
     border-radius: 10px;
   }
-  .our-services .ser p {
+  .ser-front.our-services-base .ser-base p {
     font-size: 1rem;
     max-width: 250px;
     margin: .5rem auto 1.5rem;
   }
-  .our-services .ser .ser-con {
+  .ser-front.our-services-base .ser-base .ser-con-base {
     padding: 20px 10px;
   }
 }
@@ -545,24 +529,20 @@ body.space {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 768px) {
-  .section-testimonials h2 {
-    margin-bottom: 60px;
-  }
-}
-
 .testimonial-card {
   background-color: white;
-  padding: 15px 20px 15px 20px;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 10px 0;
+  margin-left: -5px;
+  margin-right: -5px;
   margin-top: 40px;
 }
 
 .testimonial-card img {
-  width: 100px;
-  border-radius: 50%;
+  width: 80px;
+  border-radius: 10px;
   float: right;
+  margin-left: 15px;
+  margin-right: 0;
 }
 
 .testimonial-card button {
@@ -576,11 +556,18 @@ body.space {
   font-weight: 600;
   padding: 3px 13px 0 13px;
   height: 35px;
+  -webkit-transition: background-color 80ms ease-out;
+  transition: background-color 80ms ease-out;
   margin-right: auto;
 }
 
 .testimonial-card button:hover {
-  background-color: #e06a00;
+  background-color: #cc6000;
+}
+
+.testimonial-card button:active {
+  -webkit-box-shadow: 0 0 3pt 2pt #ff7800;
+          box-shadow: 0 0 3pt 2pt #ff7800;
 }
 
 @media only screen and (min-width: 576px) {
@@ -596,16 +583,30 @@ body.space {
 
 .testimonial-card:nth-child(even) img {
   float: left;
+  margin-left: 0;
   margin-right: 15px;
 }
 
-@media only screen and (min-width: 768px) {
-  .testimonial-card:nth-child(even) h3 {
-    margin-left: 0;
-  }
+.testimonial-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
+  .section-testimonials h2 {
+    margin-bottom: 60px;
+  }
+  .testimonial-card:nth-child(even) h3 {
+    margin-left: 0;
+  }
   .testimonial-card {
     background-color: none;
     padding: 0;
@@ -613,25 +614,6 @@ body.space {
   .testimonial-card img {
     width: 100%;
     border-radius: 50%;
-  }
-  .testimonial-card a {
-    display: block;
-    margin-top: auto;
-  }
-  .testimonial-card button {
-    background-color: #ff7800;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 3px 13px 0 13px;
-    height: 35px;
-  }
-  .testimonial-card button:hover {
-    background-color: #e06a00;
   }
   .testimonial-content {
     background-color: white;
@@ -683,13 +665,6 @@ body.space {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 992px) {
-  .section-news > div {
-    height: auto;
-    overflow: default;
-  }
-}
-
 .news-card {
   margin-top: 30px;
 }
@@ -698,12 +673,6 @@ body.space {
   height: 200px;
   padding: 28px 22px;
   background-color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  .news-card-content {
-    padding: 25px 20px 30px 20px;
-  }
 }
 
 .news-card-content h3 {
@@ -731,19 +700,19 @@ body.space {
   font-weight: 600;
   padding: 3px 13px 0 13px;
   height: 35px;
+  -webkit-transition: background-color 80ms ease-out;
+  transition: background-color 80ms ease-out;
   font-size: 1rem;
-  padding: 2px 25px 0 25px;
   height: 30px;
 }
 
 .news-card-content button:hover {
-  background-color: #e06a00;
+  background-color: #cc6000;
 }
 
-@media only screen and (min-width: 768px) {
-  .news-card-content button {
-    padding: 2px 20px 0 20px;
-  }
+.news-card-content button:active {
+  -webkit-box-shadow: 0 0 3pt 2pt #ff7800;
+          box-shadow: 0 0 3pt 2pt #ff7800;
 }
 
 .news-card-content small {
@@ -770,6 +739,15 @@ body.space {
       -ms-flex-align: end;
           align-items: flex-end;
   min-width: 220px;
+}
+
+@media only screen and (min-width: 768px) {
+  .news-card-content {
+    padding: 25px 20px 30px 20px;
+  }
+  .news-card-content button {
+    padding: 2px 15px 0 15px;
+  }
 }
 
 .navbar {
@@ -872,10 +850,10 @@ body.space {
 }
 
 .form-inline {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: initial;
-          flex-flow: initial;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .navbar-collapse.show .form-inline {
@@ -1000,27 +978,22 @@ body.space {
   font-size: 2.441rem;
 }
 
-.ser-min.our-services {
+.ser-min.our-services-base {
   padding: 0;
 }
 
-.ser-min.our-services .ser {
-  margin-top: 0;
-}
-
-.ser-min.our-services .ser .ser-con {
-  padding: 0;
+.ser-min .ser-con-base {
   margin: 20px;
   padding: 10px;
   width: 150px;
-  height: 120px;
 }
 
-.ser-min.our-services .ser .ser-con h3 {
+.ser-min .ser-con-base h3 {
   margin: 10px 0 0 0;
 }
 
-.ser-min.our-services .ser-ico {
+.ser-min .ser-con-base .ser-ico-base {
+  padding-top: .45rem;
   font-size: 2.1rem;
   height: 4rem;
   width: 4rem;
@@ -1043,19 +1016,15 @@ body.space {
   color: #FF7900;
 }
 
-#ser-current h3 {
+#ser-current h3, #ser-current p {
   font-weight: 800;
 }
 
-#ser-current p {
-  font-weight: 800;
-}
-
-#ser-current .ser-ico {
+#ser-current .ser-ico-base {
   background-color: #FF7900;
 }
 
-#ser-current .ser-ico i {
+#ser-current .ser-ico-base i {
   color: white;
 }
 
@@ -1182,9 +1151,12 @@ body.space {
 
 /*add button to show more info*/
 footer {
-  background-color: #d8d8d8;
-  letter-spacing: 0.4px;
   text-align: center;
+  background-color: #d8d8d8;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer h4 {
@@ -1233,13 +1205,13 @@ footer address {
 
 .social a {
   display: block;
+  position: relative;
+  width: 0;
+  border-radius: 50%;
+  margin: 0 auto;
   padding: 23px;
   color: white;
   font-size: 1rem;
-  border-radius: 50%;
-  position: relative;
-  width: 0;
-  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1390,6 +1362,8 @@ input[type="submit"] {
   font-weight: 600;
   padding: 3px 13px 0 13px;
   height: 35px;
+  -webkit-transition: background-color 80ms ease-out;
+  transition: background-color 80ms ease-out;
   font-size: 1.563rem;
   font-weight: 500;
   height: 50px;
@@ -1399,7 +1373,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #e06a00;
+  background-color: #cc6000;
+}
+
+input[type="submit"]:active {
+  -webkit-box-shadow: 0 0 3pt 2pt #ff7800;
+          box-shadow: 0 0 3pt 2pt #ff7800;
 }
 
 div.wpcf7 .ajax-loader {

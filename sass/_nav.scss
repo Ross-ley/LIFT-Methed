@@ -103,7 +103,7 @@
 
 // Removes wrapping for search bar and icon
 .form-inline {
-    flex-flow: initial;
+    flex-flow: row nowrap;
 }
 
 // Adds padding to search bar when mobile menu is open

@@ -1,27 +1,28 @@
 
 .section-contact {
-
     background-color: #007eff;
-    //padding: 40px 0;
 
-    h2 {  // Main heading
+    // section heading
+    h2 { 
         color: white;
 
+        // spacing below header
         margin-bottom: 30px;
-
         @include mq('lg') {
           margin-bottom: 50px;
         }
     }
 
-    label { // Field label
+    // Field label
+    label { 
         color: white;
         width: 100%;
         font-size: $font-sz-5;
     }
 
     p {
-        margin-bottom: 8px;   // spacing between fields
+      // spacing between fields
+        margin-bottom: 8px;   
     }
 }
 
@@ -46,7 +47,8 @@ textarea {
 }
 
 span.wpcf7-list-item {
-    margin: 0;  // Remove left margin from "Sign up" checkbox
+  // Remove left margin from "Sign up" checkbox
+    margin: 0;  
 }
 
 // Submit button
@@ -61,13 +63,14 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
-// Submit processing gif
+// Hide processing gif used when submit button is pressed
 div.wpcf7 .ajax-loader {
   background-image: none;
 }
 
+// Center submit button
 .wpcf7-form p:last-of-type {
-    text-align: center; // Center button
+    text-align: center; 
 }
 
 // Submit response message

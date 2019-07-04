@@ -1,19 +1,26 @@
 footer {
+    text-align: center;
     background-color: #d8d8d8;
+    //letter-spacing: 0.4px;
 
+    a:hover {
+        text-decoration: underline;
+    }
+
+    // Footer sections header (Sitemap, Links, Contact Us and Follow Us)
     h4 {
         font-size: $font-sz-6;
         font-weight: 600;
         margin-bottom: 15px;
     }
 
-    letter-spacing: 0.4px;
+    // Remove default list styling
     ul {
         list-style-type: none;
         padding: 0;
     }
 
-    // logo
+    // method logo
     img {
         width: 100%;
         margin-bottom: 30px;
@@ -21,20 +28,21 @@ footer {
     }
 
     address {
+        // Reduce spacing beween each line of the address
         line-height: 1.2;
     }
-
-    text-align: center;
 
     @include mq('md') {
         text-align: left;
     }
 }
 
+// copywrite symbol
 .character-cpy {
     font-size: 1.4rem;
 }
 
+// Mobile view button
 .to-top {
     text-align: center;
     
@@ -44,6 +52,7 @@ footer {
     }
 }
 
+// Used for spacing 
 .vertical-space {
     height: 5px;
 }
@@ -52,21 +61,25 @@ footer {
 {
     a  {
         display: block;
-        padding: 23px;
-
-        color: white;
-        font-size: 1rem;
-        border-radius: 50%;
-
         position: relative;
         width: 0;
+        border-radius: 50%;
 
+        // center icon in mobile view
         margin: 0 auto;
 
         @include mq('md') {
             margin: 0;
         }
 
+        // icon size
+        padding: 23px;
+
+        // text
+        color: white;
+        font-size: 1rem;
+
+        // fontawesome character
         i {
             position: absolute;
             top: 50%;
@@ -77,8 +90,10 @@ footer {
     }
 
     li {
+        // vertical spcing
         height: 60px;
 
+        // small indent to space away from email address
         @include mq('md') {
             margin-left: 10px;
         }
@@ -90,6 +105,7 @@ footer {
     background-color: #3b5998;
 
     i {
+        // nudge to right
         left: 55%;
     }
 }

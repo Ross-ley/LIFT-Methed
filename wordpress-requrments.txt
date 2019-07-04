@@ -1,3 +1,5 @@
+Requirement for theme to function correctly when using a fresh install of wordpress.
+
 1. Must have a page named "Brand", "Consultancy", "Digital", "PR" and "News"
 2. Must have Contact Form 7 plugin enabled. With form layout set in plugin settings.
 3. 

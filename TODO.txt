@@ -15,5 +15,17 @@ Terms & Conditions
 Cookie Policy
 Sitemap
 
-
-Underline footer links on hover
+OPTIONAL:
+Underline latest news heading on hover
+Create on-click behavior for links.
+Review SASS for re-usability.
+Remove extra span tags from contact form.
+Make selector used in JavaScript and CSS for forms more specific.
+Add hover states to news cards.
+Restore text area placeholder text if focus is lost and nothing is entered.
+Use custom post category and custom fields plugins for customer content.
+Review when to use child and descendant selectors.
+Use consistant colours for text and avoid black on white text.
+Rename form id using with contact form 7.
+Fix hover state triggering on label for dropdown menu in internet explorer.
+Add subheading to services pages.

@@ -1,5 +1,6 @@
 <footer>
     <div class="container">
+        <!-- Single column layout for mobile view and 4 columns from md breakpoint and larger. -->
         <div class="row justify-content-between">
             <div class="col-md-3 foot-col">
                 <ul>
@@ -7,10 +8,12 @@
                     <li>
                         <h4><a href="#">Sitemap</a></h4>
                     </li>
-                    <li> <span class="character-cpy">&copy;</span> 2019 Methed.</li>
-                    <li> All rights reserved.</li>
+                    <!-- .character-cpy class increases size of copywrite symbol -->
+                    <li><span class="character-cpy">&copy;</span> 2019 Methed.</li>
+                    <li>All rights reserved.</li>
                 </ul>
             </div>
+            <!-- Links -->
             <div class="col-md-3 foot-col">
                 <ul>
                     <li>
@@ -23,6 +26,7 @@
                     <li><a href="">Cookie Policy</a></li>
                 </ul>
             </div>
+            <!-- Contact Us -->
             <div class="col-md-3 foot-col">
                 <ul>
                     <li>
@@ -31,10 +35,10 @@
                     <li>
                         <address>
                             <ul>
-                                <li><a href="">10 Somewhere</a></li>
-                                <li><a href="">Somewhere Street</a></li>
-                                <li><a href="">Norfolk,</a></li>
-                                <li><a href="">NR4 2UU</a></li>
+                                <li>10 Somewhere</li>
+                                <li>Somewhere Street</li>
+                                <li>Norfolk,</li>
+                                <li>NR4 2UU</li>
                             </ul>
                         </address>
                     </li>
@@ -43,6 +47,7 @@
                     <li><span class="text-muted">Phone: </span><a href="tel:01493444444">01493444444</a></li>
                 </ul>
             </div>
+            <!-- Follow Us -->
             <div class="col-md-2  foot-col follow-us">
                 <ul>
                     <li>
@@ -61,11 +66,10 @@
         <div class="to-top d-md-none"> 
             <a href="#"><i class="fas fa-chevron-up"></i><a>
         </div>
-    </div>
-</footer>
+    </div>  <!-- /.container -->
+</footer>   
 
 <?php wp_footer(); ?>
 
 </body>
-
 </html>
