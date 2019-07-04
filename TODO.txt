@@ -16,7 +16,6 @@ Cookie Policy
 Sitemap
 
 OPTIONAL:
-Underline latest news heading on hover
 Create on-click behavior for links.
 Review SASS for re-usability.
 Remove extra span tags from contact form.
