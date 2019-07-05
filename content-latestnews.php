@@ -17,9 +17,9 @@
 			<!--  Single column layout for mobile, 2 column from md breakpoint and 3 column from lg breakpoint  -->
 				<div class="col-md-6 col-lg-4 news-card">
 					<!--  Feature image  -->
-					<a href="<?php the_permalink(); ?>">	
-						<?php if(has_post_thumbnail()) {  the_post_thumbnail('full', 'class=d-block'); } else { ?>
-						<img class="d-block" src="<?php bloginfo('template_directory'); ?>/images/news-default.png"
+					<a class="d-block" href="<?php the_permalink(); ?>">	
+						<?php if(has_post_thumbnail()) {  the_post_thumbnail(); } else { ?>
+						<img src="<?php bloginfo('template_directory'); ?>/images/news-default.png"
 							alt="Method Consultancy">
 						<?php } ?>
 					</a>

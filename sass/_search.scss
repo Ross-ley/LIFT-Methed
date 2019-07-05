@@ -1,0 +1,23 @@
+
+.my-search-results {
+    background-color: $col-bg-grey;
+    padding: 20px 0 30px 0;
+    p {
+        font-weight: 500;
+        color: $col-text-grey;
+        font-size: $font-sz-7;
+    }
+
+    p:nth-of-type(odd) {
+        margin-bottom: 0;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.search-results-link a {
+    color: #0645AD;
+    font-weight: 500;
+}

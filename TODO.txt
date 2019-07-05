@@ -15,8 +15,12 @@ Terms & Conditions
 Cookie Policy
 Sitemap
 
+BUGS:
+Search bar resizes when hovering over suggested vales.
+Searching for page name uses index.php.
+
 OPTIONAL:
-Create on-click behavior for links.
+Create on-click behavior for links. (complete for buttons)
 Review SASS for re-usability.
 Remove extra span tags from contact form.
 Make selector used in JavaScript and CSS for forms more specific.

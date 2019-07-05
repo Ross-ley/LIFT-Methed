@@ -27,3 +27,13 @@ function theme_fonts() {
 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700&display=swap', false );
 }
 add_action( 'wp_enqueue_scripts', 'theme_fonts');
+
+
+// Actions and filters
+
+// Removes span tags added by contact form 7 plugin
+add_filter('wpcf7_form_elements', function($content) {
+   //$content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+    return $content;
+});

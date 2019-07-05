@@ -169,6 +169,10 @@ input[type="search"]::-webkit-search-decoration {
   font-family: Montserrat, Arial;
 }
 
+main {
+  min-height: calc(100vh - (330px + 90px));
+}
+
 a {
   color: inherit;
 }
@@ -221,6 +225,19 @@ h3 {
 
 body.space {
   padding-top: 72px;
+}
+
+.orange-heading {
+  background-color: #ff7800;
+  color: white;
+  padding: 30px 0 10px 0;
+}
+
+.orange-heading h2 {
+  font-size: 2.441rem;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .our-services-base {
@@ -669,6 +686,23 @@ body.space {
   margin-top: 30px;
 }
 
+.news-card > a {
+  overflow: hidden;
+  position: relative;
+}
+
+.news-card > a:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-box-shadow: inset 0 0 0 5pt #ff7800;
+          box-shadow: inset 0 0 0 5pt #ff7800;
+}
+
 .news-card-content {
   height: 200px;
   padding: 28px 22px;
@@ -678,6 +712,10 @@ body.space {
 .news-card-content h3 {
   font-weight: 500;
   color: #474747;
+}
+
+.news-card-content h3:hover {
+  text-decoration: underline;
 }
 
 .news-card-content p {
@@ -769,6 +807,12 @@ body.space {
   margin-left: 1rem;
 }
 
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,6 +847,11 @@ body.space {
 
 .current-menu-item:hover {
   color: #cc6000;
+}
+
+.search-bar:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 120, 0, 0.7);
+          box-shadow: 0 0 0 0.2rem rgba(255, 120, 0, 0.7);
 }
 
 .button-search {
@@ -1277,6 +1326,10 @@ footer address {
   font-size: 1rem;
 }
 
+.section-news {
+  padding-top: 20px;
+}
+
 .pagination {
   font-size: 1.25rem;
   font-weight: 600;
@@ -1302,6 +1355,42 @@ footer address {
   .news-latest .news-card:nth-of-type(3) {
     display: block;
   }
+}
+
+.article-content {
+  background-color: #dadada;
+  padding-top: 30px;
+  font-size: 1.25rem;
+}
+
+.article-content small {
+  color: #006bfd;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.my-search-results {
+  background-color: #dadada;
+  padding: 20px 0 30px 0;
+}
+
+.my-search-results p {
+  font-weight: 500;
+  color: #474747;
+  font-size: 0.8rem;
+}
+
+.my-search-results p:nth-of-type(odd) {
+  margin-bottom: 0;
+}
+
+.my-search-results a:hover {
+  text-decoration: underline;
+}
+
+.search-results-link a {
+  color: #0645AD;
+  font-weight: 500;
 }
 
 .section-contact {

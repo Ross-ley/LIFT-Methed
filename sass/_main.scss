@@ -438,6 +438,29 @@
 // Spacing between rows of news cards
 .news-card {
     margin-top: 30px;
+
+    // Image link
+    // >a:hover img {
+    //     transform: scale(1.2);
+    // }
+
+    >a {
+        overflow: hidden;
+        position: relative;
+    
+        &:hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            //background-color: rgba($col-primary, 0.5);
+            display: block;
+
+            box-shadow: inset 0 0 0 5pt $col-primary;
+        }
+    }
 }
 
 .news-card-content {
@@ -450,6 +473,10 @@
     h3 {
         font-weight: 500;
         color: $col-text-grey;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     p { // Date of article

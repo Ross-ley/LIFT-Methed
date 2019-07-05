@@ -30,8 +30,8 @@
             wp_nav_menu( $args );
         ?>
                 <!--  Search bar and button  -->
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="form-inline mt-2 mt-md-0">
+                    <input class="search-bar form-control mr-sm-2" type="text" name="s" id="s" placeholder="Search" aria-label="Search">
                     <button class="button-search my-2 my-sm-0" type="submit"><i class="fas fa-search fa-2x"
                             onclick="myFunction()"></i></button>
                 </form>

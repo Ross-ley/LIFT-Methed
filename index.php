@@ -1,6 +1,8 @@
 <?php get_header(); ?>	 <!-- include header.php -->
+<main>
+<h1>INDEX.PHP</h1>
 
-    <div class="container" role="main">
+    <!-- <div class="container" role="main">
 
 	    <div class="row">
 
@@ -27,10 +29,8 @@
 
 	    	</div>
 
-	    	<!-- <?php get_sidebar(); ?>	include sidebar.php -->
-
 	    </div>
 
-    </div>
-
+    </div> -->
+</main>
 <?php get_footer(); ?> <!-- include footer.php -->

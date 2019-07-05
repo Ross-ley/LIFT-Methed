@@ -1,3 +1,7 @@
+.section-news {
+    padding-top: 20px;
+}
+
 .pagination {
     font-size: $font-sz-5;
     font-weight: 600;
@@ -27,5 +31,19 @@
 
     .news-latest .news-card:nth-of-type(3) {
         display: block;
+    }
+}
+
+.article-content {
+    background-color: $col-bg-grey;
+    padding-top: 30px;
+
+    font-size: $font-sz-5;
+
+    // Date
+    small {
+        color: $col-text-blue;
+        font-weight: 500;
+        font-size: $font-sz-6;
     }
 }

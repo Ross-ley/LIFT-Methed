@@ -1,12 +1,12 @@
 <?php get_header(); ?>
+<main>
 
-<div class="orange-heading">
-    <div class="container">
-        <h2 class="text-left">News Post category: <?php wp_title( '' ); ?></h2>
+    <div class="orange-heading">
+        <div class="container">
+            <h2 class="text-left">Search results for: <?php echo the_search_query(); ?></h2>
+        </div>
     </div>
-</div>
-
-<div class="my-search-results" >
+    <div class="my-search-results" >
         <div class="container">
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -23,7 +23,6 @@
 
         </div>
     </div>
-
-<?php get_template_part('content', 'latestnews'); ?>
-
+    <?php get_template_part('content', 'latestnews'); ?>
+</main>
 <?php get_footer(); ?>

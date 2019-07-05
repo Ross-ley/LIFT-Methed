@@ -1,31 +1,31 @@
 <?php get_header(); ?>
 
-<div class="container" role="main">
+<div class="orange-heading">
+    <div class="container">
+        <h2 class="text-left"><?php the_title(); ?></h2>
+    </div>
+</div>
 
-    <h1>LINK TO ALL NEWS</h1>
-
-    <div class="row">
-
+<section class="article-content">
+    <div class="container" role="main">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <div class="page-header">
-            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-            <p class="meta">
-                <?php echo the_time('F jS, Y'); ?>
-            </p>
-        </div>
+        <p class="text-center"><?php the_post_thumbnail('large'); ?></p>
 
-        <p><?php the_post_thumbnail('medium'); ?></p>
+        <p>
+            <small><?php echo the_time('F jS, Y'); ?></small>
+        </p>
 
         <?php the_content(); ?>
-
-        <hr>
 
         <?php endwhile; endif; ?>
 
     </div>
+</section>
 
-</div>
+<?php get_template_part('content', 'latestnews'); ?>
+
+<?php get_template_part('content', 'contact'); ?>
 
 <?php get_footer(); ?>
