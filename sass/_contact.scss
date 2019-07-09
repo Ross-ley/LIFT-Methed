@@ -49,18 +49,19 @@
 }
 
 // All text fields
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea
-{
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    padding: 6px 10px;
-    margin-top: 3px;
+.section-contact {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea
+  {
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      padding: 6px 10px;
+      margin-top: 3px;
+  }
 }
-
 textarea {
     font-size: $font-sz-6;
     resize: none;

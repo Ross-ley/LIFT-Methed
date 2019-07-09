@@ -52,3 +52,13 @@ function custom_field_excerpt() {
 	}
 	return apply_filters('the_excerpt', $text);
 }
+
+function permalink_short() {
+	$link = get_permalink();
+
+	if(strlen($link) > 40) {
+		$link = substr($link, 0, 40)."...";
+	}
+
+	return $link;
+}

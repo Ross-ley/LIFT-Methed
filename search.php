@@ -14,7 +14,7 @@
 
                     <?php the_excerpt(); ?>
 
-                    <p class="search-results-link"><a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a></p>
+                    <p class="search-results-link"><a href="<?php the_permalink(); ?>"><?php echo permalink_short(); ?></a></p>
                 <?php endwhile; else: ?>
 
                 <p>No results were found.</p>

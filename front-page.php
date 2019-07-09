@@ -6,12 +6,12 @@
         <div class="front-header-content">
             <h1>marketing consultancy</h1>
             <p>Catering for all your needs to start a business.</p>
+        </div> <!-- /.front-header-content -->            
             <a id="find-out-more" href="#">
                 <!-- scrolls page to premotion section using JavaScipt-->
                 <span>Find Out More</span>
                 <i class="fas fa-chevron-down"></i>
             </a>
-        </div> <!-- /.front-header-content -->
     </div> <!-- /.header-img-wrapper -->
 </header>
 

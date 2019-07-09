@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 
 .front-header-content {
@@ -23,29 +24,55 @@
     color: white;
     text-align: center;
 
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+
     h1 {
         font-size: 2.8rem;
         line-height: 1.3;
 
-        margin-bottom: 50px;    // Bottom offset (3)
+        margin-bottom: 20px;
     }
 
     p {
         font-size: $font-sz-5;
 
         padding: 0 10px;    // Force line break for medium mobile sizes
-        margin-bottom: 140px;   // Bottom offset (2)
+        margin-bottom: 40px;
     }
 }
 
 #find-out-more {
+    color: white;
+    text-align: center;
+
     display: block;
     width: 200px;
-    margin: 0 auto 20px auto;   // Bottom offset (1)
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    @include mq('md') {
+        margin-bottom: 50px;
+    }
+
+    &:hover {
+        span {
+            color: darken(white, 20%);
+        }
+
+        i {
+            color: darken($col-primary, 10%);
+        }
+    }
 
     span {
-        font-size: $font-sz-4;
+        font-size: $font-sz-5;
         font-weight: 400;
+        @include mq('md') {
+            font-size: $font-sz-4;
+        }
     }
 
     i {
@@ -64,7 +91,7 @@
     
         p {
             font-size: $font-sz-4;
-            margin-bottom: 160px;   // Bottom offset (2)
+            margin-bottom: 100px;   // Bottom offset (2)
         }
     }
 }

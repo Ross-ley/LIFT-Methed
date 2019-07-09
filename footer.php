@@ -9,7 +9,7 @@
                         <h4><a href="<?php echo get_permalink( get_page_by_title( 'Sitemap' ) ); ?>">Sitemap</a></h4>
                     </li>
                     <!-- .character-cpy class increases size of copywrite symbol -->
-                    <li><span class="character-cpy">&copy;</span> 2019 Methed.</li>
+                    <li><span class="character-cpy">&copy;</span> 2019 Method.</li>
                     <li>All rights reserved.</li>
                 </ul>
             </div>

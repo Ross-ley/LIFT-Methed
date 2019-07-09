@@ -254,19 +254,20 @@ body.space {
   color: white;
 }
 
-.ser-base:hover {
+.ser-base a:hover {
   color: #ff7800;
-}
-
-.ser-base:hover .ser-con-base {
   background-color: white;
 }
 
-.ser-base:hover .ser-con-base h3, .ser-base:hover .ser-con-base p {
+.ser-base a:hover .ser-con-base {
+  background-color: white;
+}
+
+.ser-base a:hover .ser-con-base h3, .ser-base a:hover .ser-con-base p {
   font-weight: 800;
 }
 
-.ser-base:hover .ser-btn, .ser-base:hover .ser-ico-base {
+.ser-base a:hover .ser-btn, .ser-base a:hover .ser-ico-base {
   background-color: #ff7800;
   color: white;
 }
@@ -315,6 +316,7 @@ body.space {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
 }
 
 .front-header-content {
@@ -322,29 +324,57 @@ body.space {
   padding-right: 10px;
   color: white;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .front-header-content h1 {
   font-size: 2.8rem;
   line-height: 1.3;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .front-header-content p {
   font-size: 1.25rem;
   padding: 0 10px;
-  margin-bottom: 140px;
+  margin-bottom: 40px;
 }
 
 #find-out-more {
+  color: white;
+  text-align: center;
   display: block;
   width: 200px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  #find-out-more {
+    margin-bottom: 50px;
+  }
+}
+
+#find-out-more:hover span {
+  color: #cccccc;
+}
+
+#find-out-more:hover i {
+  color: #cc6000;
 }
 
 #find-out-more span {
-  font-size: 1.563rem;
+  font-size: 1.25rem;
   font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  #find-out-more span {
+    font-size: 1.563rem;
+  }
 }
 
 #find-out-more i {
@@ -359,7 +389,7 @@ body.space {
   }
   .front-header-content p {
     font-size: 1.563rem;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1482,10 +1512,10 @@ footer address {
   margin-bottom: 8px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea {
+.section-contact input[type="text"],
+.section-contact input[type="email"],
+.section-contact input[type="number"],
+.section-contact textarea {
   border-radius: 5px;
   border: none;
   width: 100%;

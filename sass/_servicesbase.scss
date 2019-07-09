@@ -8,8 +8,10 @@
     text-align: center;
     color: white;
 
-    &:hover {
+    a:hover {
         color: $col-primary;
+
+        background-color: white;
 
         .ser-con-base {
             background-color: white;

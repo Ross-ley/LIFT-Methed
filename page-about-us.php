@@ -14,25 +14,25 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/franchise.png" />
             </div>
             <div class="mid-section-inline">
-                <div class="section-1">
+                <div class="section-1 WE">
                     <h3>Lorem ipsum</h3>
-                    <p class="WE">Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad
+                    <p>Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad
                         litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis massa quis nulla
                         euismod, at accumsan magna tempor. Mauris porttitor dui ut augue feugiat, ut egestas libero
                         accumsan. Integer quam magna, semper vitae magna at, accumsan commodo turpis. Sed porta eu augue
                         id accumsan.</p>
                 </div>
-                <div class="section-2">
+                <div class="section-2 WE">
                     <h3>Lorem ipsum</h3>
-                    <p class="WE">Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad
+                    <p>Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad
                         litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis massa quis nulla
                         euismod, at accumsan magna tempor. Mauris porttitor dui ut augue feugiat, ut egestas libero
                         accumsan. Integer quam magna, semper vitae magna at, accumsan commodo turpis. Sed porta eu augue
                         id accumsan.</p>
                 </div>
-                <div class="section-3">
+                <div class="section-3 WE">
                     <h3>Lorem ipsum</h3>
-                    <p class="WE">Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad
+                    <p>Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad
                         litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis massa quis nulla
                         euismod, at accumsan magna tempor. Mauris porttitor dui ut augue feugiat, ut egestas libero
                         accumsan. Integer quam magna, semper vitae magna at, accumsan commodo turpis. Sed porta eu augue
@@ -48,17 +48,17 @@
         <div>
             <h2 class="sub-title">How we can help</h2>
             <div class="mid-section-inline">
-                <div>
+                <div class="WE">
                     <h3>Lorem ipsum</h3>
-                    <p class="col-12 WE">Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu
+                    <p>Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu
                         ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis massa quis
                         nulla euismod, at accumsan magna tempor. Mauris porttitor dui ut augue feugiat, ut egestas
                         libero accumsan. Integer quam magna, semper vitae magna at, accumsan commodo turpis. Sed porta
                         eu augue id accumsan.</p>
                 </div>
-                <div>
+                <div class="WE">
                     <h3>Lorem ipsum</h3>
-                    <p class="col-12 WE">Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu
+                    <p>Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu
                         ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis massa quis
                         nulla euismod, at accumsan magna tempor. Mauris porttitor dui ut augue feugiat, ut egestas
                         libero accumsan. Integer quam magna, semper vitae magna at, accumsan commodo turpis. Sed porta
