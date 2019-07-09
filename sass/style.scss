@@ -14,7 +14,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
  //Utilites
 @import 'variables',
-        'mixins';
+        'mixins',
+        'functions';
 
 // Base Styles
 @import 'base',
@@ -27,7 +28,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
         'services',
         'about',
         'footer',
-        'entry';
+        'entry',
+        'sitemap';
+
+// Wordpress styles
+@import 'wordpresscontent';
 
 // Pages
 @import 'news',

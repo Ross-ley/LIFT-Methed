@@ -1,0 +1,24 @@
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+  }
+
+@function em($target, $context: $base-font-size) {
+@if not unitless($target) {
+    $target: strip-unit($target);
+}
+@if not unitless($context) {
+    $context: strip-unit($context);
+}
+@if $target == 0 { @return 0 }
+    @return $target / $context + 0em;
+}
+
+@function px-to-pc($target, $context) {
+    @return ($target / $context) * 100%;
+ }
+
+
+ @function px-to-rem($target, $context) {
+   @return ($target / $context) * 1rem;
+ }

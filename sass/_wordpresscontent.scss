@@ -1,0 +1,14 @@
+
+.wordpress-content {
+    img {
+        max-width: 290px;
+        height: auto;
+
+        @include mq('md') {
+            max-width: 600px;
+        }
+        @include mq('lg') {
+            max-width: 800px;
+        }        
+    }
+}

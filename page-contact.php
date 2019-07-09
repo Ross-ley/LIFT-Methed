@@ -1,47 +1,56 @@
 <?php get_header(); ?>
 
-    <div class="container" role="main">
-
-	    <div class="row">
-
-	    	<div class="col-md-8">
-
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	
-				    <div class="page-header">	
-				    	<h1><?php the_title(); ?></h1>
-				    </div>
+<div class="orange-heading">
+    <div class="container">
+        <h2 class="text-left">Contact</h2>
+    </div>
+</div>
 
 
-					<?php the_content(); ?>
+<div class="contact-content" role="main">
 
-				<?php endwhile; endif; ?>
+    <div class="container">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php the_content(); ?>
+        <?php endwhile; endif; ?>
+    </div>
 
-			</div>
+    <div class="container contact-content-address">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-4">
+                <h3>Contact Info</h3>
+                <address>
+                    <ul>
+                        <li>10 Somewhere</li>
+                        <li>Somewhere Street</li>
+                        <li>Norfolk,</li>
+                        <li>NR4 2UU</li>
+                    </ul>
+                </address>
+                <p><span class="text-muted">Email: </span><a href="mailto:method@example.com">method@example.com</a></p>
+                <p><span class="text-muted">Phone: </span><a href="tel:01493444444">01493444444</a></p>
+            </div>
 
-	    	<div class="col-md-4">
-	    		<div class="widget">
-	    		<h3>Contact Info</h3>
-	    		<p>Phone: 555-555-5555</p>
-	    		<p>Address: N Burnet, Austin, TX 78758</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27559.020228121262!2d-97.7370279!3d30.297548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1398534727784" width="300" height="200" frameborder="0" style="border:0"></iframe>
-				</div>
-			</div>
-			<div>
-			<p class="col-12 WE">Finibus at condimentum sed, suscipit euismod leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis massa quis nulla euismod, at accumsan magna tempor. Mauris porttitor dui ut augue feugiat, ut egestas libero accumsan. Integer quam magna, semper vitae magna at, accumsan commodo turpis. Sed porta eu augue id accumsan.</p>
-			</div>
+            <div class="d-none">
+                <iframe src="https://maps.google.com/maps?q=Norwich&t=&z=15&ie=UTF8&iwloc=&output=embed" width="700"
+                    height="230" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <iframe src="https://maps.google.com/maps?q=Norwich&t=&z=15&ie=UTF8&iwloc=&output=embed" width="290"
+                    height="300" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
-		</div>
-		
-
-	</div>
-	<div>
-		<section class="section-contact">
-			<div class="container">
-				<?php echo do_shortcode( '[contact-form-7 id="51" title="Contact form 1"]' ); ?>
-			</div>
-		</section>
-	</div>
+<div>
+    <section class="section-contact">
+        <div class="container">
+            <h2>send us a message</h2>
+            <?php echo do_shortcode( '[contact-form-7 id="51" title="Contact form 1"]' ); ?>
+        </div>
+    </section>
+</div>
 
 
 <?php get_footer(); ?>

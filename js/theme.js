@@ -33,8 +33,11 @@ jQuery(document).ready(function($) {
       }
    });
 
+   // Use bootstrap grid to align text and checkbox side by side. From the medium breakpoint flexbox display is changed to block to remove grid.
+   $('.contactform-checkbox>span>span>span>label').addClass('row align-items-center justify-content-center d-md-block mx-md-0').children().addClass('col-8 col-md-10');
+
    // Adds wrapper and span sibling elements for custom checkbox css to target
-   $('input[type="checkbox"]').wrap("<div class='checkbox-wrapper'></div>").parent().css('display', 'inline-block').append('<span class="checkmark"></span>');
+   $('input[type="checkbox"]').wrap("<div class='checkbox-wrapper col-1'></div>").parent().css('display', 'inline-block').append('<span class="checkmark"></span>');
 
    // Sets bootstrap grid 'row' for form layout
    $('.wpcf7-form').addClass('row');
@@ -73,4 +76,23 @@ console.log('CHECKING IF body HAS CLASS .home');
           scrollTop: $("#find-out-more-destination").offset().top},
           'slow');
   });
+
+  // Add class for left sided image in odd testimonials.
+//   var odd = false;
+//   $('.testimonals-wrapper').children().each ( function() {
+//       if(odd) {
+
+//       }
+//       else {
+//          odd = true;
+//       }
+
+//   });
+  const testimonials = document.getElementsByClassName("testimonial-card");
+  for (let i = 0; i < testimonials.length; i++) {
+   if((i % 2) === 1) {
+      testimonials[i].classList.add("testimonial-img-left");
+   }
+ }
+
 });

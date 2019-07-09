@@ -1,29 +1,11 @@
 <?php get_header(); ?>
-<div class="grey-back">
-    <div class="container grey-back" role="main">
-        <div class="row">
-            <div class="col-md-12">
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                <div class="page-header">
-                    <h1><?php the_title(); ?></h1>
-                </div>
-
-                <div class="content-img">
-                    <?php the_content();?>
-                    <span class="imgtest">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/franchise.png" />
-                    </span>
-                </div>
-
-                <?php endwhile; endif; ?>
-
-            </div>
-
-        </div>
-
+<div class="orange-heading">
+    <div class="container">
+        <h2 class="text-left">About Us</h2>
     </div>
 </div>
+
 <div>
     <div class="mid-section" role="main">
         <div>

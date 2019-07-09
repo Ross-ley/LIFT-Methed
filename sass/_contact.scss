@@ -1,3 +1,25 @@
+.contact-content {
+  padding: 30px 0;
+
+  ul {
+    @include reset-list;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.contact-content-address {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include mq('md') {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .section-contact {
     background-color: #007eff;
@@ -107,7 +129,7 @@ input[type="number"] {
     position: relative;
     padding-left: 35px;
     margin-bottom: 22px;
-    margin-left: 20px;
+    // margin-left: 20px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;

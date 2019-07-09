@@ -6,7 +6,7 @@
     </div>
 </div>
 
-<section class="article-content">
+<section class="article-content wordpress-content">
     <div class="container" role="main">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

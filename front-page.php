@@ -32,16 +32,17 @@
     </div> <!-- /.container -->
 </section>
 
-<section class="ser-front our-services-base">   <!-- .ser-front class used to identify services section styling specific to front page -->
+<section class="ser-front our-services-base">
+    <!-- .ser-front class used to identify services section styling specific to front page -->
     <div class="container">
         <div class="ser-title">
             <h2>Our Services</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, animi.</p>
         </div>
         <!-- 1 column mobile view, 2 column sm-md breakpoint, 4 column lg+ breapoint-->
-        <div class="row">   
+        <div class="row">
             <!-- Digital -->
-            <div class="ser-base col-12 col-sm-6 col-lg-3">     
+            <div class="ser-base col-12 col-sm-6 col-lg-3">
                 <a class="ser-con-base" href="<?php echo get_permalink( get_page_by_title( 'Digital' ) ); ?>">
                     <span class="ser-ico-base"><i class="fas fa-handshake"></i></span>
                     <h3>Digital</h3>
@@ -50,7 +51,7 @@
                 </a>
             </div>
             <!-- Consultancy -->
-            <div class="ser-base col-12 col-sm-6 col-lg-3">     
+            <div class="ser-base col-12 col-sm-6 col-lg-3">
                 <a class="ser-con-base" href="<?php echo get_permalink( get_page_by_title( 'Consultancy' ) ); ?>">
                     <span class="ser-ico-base"><i class="fas fa-desktop"></i></span>
                     <h3>Consultancy</h3>
@@ -59,7 +60,7 @@
                 </a>
             </div>
             <!-- Brand -->
-            <div class="ser-base col-12 col-sm-6 col-lg-3">     
+            <div class="ser-base col-12 col-sm-6 col-lg-3">
                 <a class="ser-con-base" href="<?php echo get_permalink( get_page_by_title( 'Brand' ) ); ?>">
                     <span class="ser-ico-base"><i class="fas fa-lightbulb"></i></span>
                     <h3>Brand</h3>
@@ -68,9 +69,8 @@
                 </a>
             </div>
             <!-- Public Relations -->
-            <div class="ser-base ser col-12 col-sm-6 col-lg-3"> 
-                <a class="ser-con-base"
-                    href="<?php echo get_permalink( get_page_by_title( 'Public Relations' ) ); ?>">
+            <div class="ser-base ser col-12 col-sm-6 col-lg-3">
+                <a class="ser-con-base" href="<?php echo get_permalink( get_page_by_title( 'Public Relations' ) ); ?>">
                     <span class="ser-ico-base"><i class="fas fa-bullhorn"></i></span>
                     <h3>PR</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, optio.</p>
@@ -83,71 +83,51 @@
 
 <?php get_template_part('content', 'expertise'); ?>
 
+
+
+
+
+
 <section class="section-testimonials">
     <!-- Testimials Mobile  -->
     <h2>our testimonials</h2>
 
-    <div class="container">
+    <div class="container testimonals-wrapper">
+    <?php 
+                    $args = array(
+                        'post_type' => 'testimonial',
+                        'posts_per_page' => 3,
+                    );
+                    $the_query = new WP_Query( $args );
+                    ?>
+
+            <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="testimonial-card row">
-            <!-- Josh -->
             <div class="testimonial-content col-md-7 col-lg-9">
-                <div>   <!-- wrapper used to add space between text and "find out more" button -->
-                    <h3>Meet Josh</h3>
-                    <img class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Josh.png"
-                        alt="Meet Josh">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima,
-                        corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos
-                        deleniti eligendi aperiam possimus</p>
+
+
+                <div>
+                    <!-- wrapper used to add space between text and "find out more" button -->
+                    <h3>Meet <?php echo the_field("authors_name"); ?></h3>
+                    <img class="d-md-none" src="<?php echo the_field("headshot"); ?>" alt="Meet Josh">
+                    <p><?php echo custom_field_excerpt(); ?></p>
                 </div>
                 <div>
                     <a href="<?php echo get_permalink( get_page_by_title( 'Testimonials' ) ); ?>"><button>find out
                             more</button></a>
-                </div>                        
+                </div>
+
+
             </div>
             <!-- Image occupies less columns from large breakpont to sale down size -->
             <div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
-                <img src="<?php bloginfo('template_directory'); ?>/images/Josh.png" alt="Meet Josh">
+                <img src="<?php echo the_field("headshot"); ?>" alt="Meet Josh">
             </div>
+
         </div>
-        <div class="testimonial-card row testimonial-img-left">
-            <!-- Clair -->
-            <div class="testimonial-content col-md-7 col-lg-9">
-                <div>
-                    <h3>Meet Clair</h3>
-                    <img class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Clair.png"
-                        alt="Meet Josh">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima,
-                        corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos
-                        deleniti eligendi aperiam possimus</p>
-                </div>
-                <div>
-                    <a href="<?php echo get_permalink( get_page_by_title( 'Testimonials' ) ); ?>"><button>find out
-                            more</button></a>
-                </div>
-            </div>
-            <div class="testimonial-img-bg col-md-5 col-lg-3 d-none d-md-block">
-                <img src="<?php bloginfo('template_directory'); ?>/images/Clair.png" alt="Meet Josh">
-            </div>
-        </div>
-        <div class="testimonial-card row">
-            <!-- Ryan -->
-            <div class="testimonial-content col-md-7 col-lg-9">
-                <div>
-                    <h3>Meet Ryan</h3>
-                    <img class="d-md-none" src="<?php bloginfo('template_directory'); ?>/images/Ryan.png"
-                        alt="Meet Josh">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores veritatis minima,
-                        corporis a tenetur consequuntur quas delectus nemo nulla sequi eaque quam magni. Dignissimos
-                        deleniti eligendi aperiam possimus</p>
-                </div>
-                <a href="<?php echo get_permalink( get_page_by_title( 'Testimonials' ) ); ?>"><button>find out
-                        more</button></a>
-            </div>
-            <div class="testimonial-img-bg col-md-5 col-lg-3  d-none d-md-block">
-                <img src="<?php bloginfo('template_directory'); ?>/images/Ryan.png" alt="Meet Josh">
-            </div>
-        </div>
-    </div>  <!-- /.container -->
+        <?php endwhile; endif; ?>
+        <?php wp_reset_postdata(); ?>
+    </div> <!-- /.container -->
 </section> <!--  /.section-testimonials  -->
 
 <?php get_template_part('content', 'latestnews'); ?>

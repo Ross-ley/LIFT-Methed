@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_header(); ?>
 
 <div class="orange-heading">
     <div class="container">
@@ -9,8 +10,6 @@
 <section class="section-testimonials">
 
     <div class="container">
-        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                        dignissim pellentesque felis.</p>
         <div class="testimonial-card row">
             <!-- Josh -->
             <div class="testimonial-content col-md-7 col-lg-9 ">

@@ -6,7 +6,7 @@
                 <ul>
                     <li><img src="<?php bloginfo('template_directory'); ?>/images/logo-black.png" alt="logo"></li>
                     <li>
-                        <h4><a href="#">Sitemap</a></h4>
+                        <h4><a href="<?php echo get_permalink( get_page_by_title( 'Sitemap' ) ); ?>">Sitemap</a></h4>
                     </li>
                     <!-- .character-cpy class increases size of copywrite symbol -->
                     <li><span class="character-cpy">&copy;</span> 2019 Methed.</li>
@@ -19,11 +19,11 @@
                     <li>
                         <h4>Links</h4>
                     </li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Data Policy</a></li>
-                    <li><a href="">Terms &#38; Conditions</a></li>
-                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="<?php echo get_permalink( get_page_by_title( 'About Us' ) ); ?>">About Us</a></li>
+                    <li><a href="<?php echo get_permalink( get_page_by_title( 'Privacy Policy' ) ); ?>">Privacy Policy</a></li>
+                    <li><a href="<?php echo get_permalink( get_page_by_title( 'Data Policy' ) ); ?>">Data Policy</a></li>
+                    <li><a href="<?php echo get_permalink( get_page_by_title( 'Terms and Conditions' ) ); ?>">Terms &#38; Conditions</a></li>
+                    <li><a href="<?php echo get_permalink( get_page_by_title( 'Cookie Policy' ) ); ?>">Cookie Policy</a></li>
                 </ul>
             </div>
             <!-- Contact Us -->

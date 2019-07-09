@@ -223,6 +223,11 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 body.space {
   padding-top: 72px;
 }
@@ -1007,7 +1012,7 @@ body.space {
 
 .ser-banner h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 2.8rem;
   text-align: left;
   font-weight: 600;
 }
@@ -1326,6 +1331,38 @@ footer address {
   font-size: 1rem;
 }
 
+.wsp-pages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2;
+  color: #006bfd;
+  padding: 30px 0;
+}
+
+.wsp-pages-list a:hover {
+  text-decoration: underline;
+}
+
+.wordpress-content img {
+  max-width: 290px;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .wordpress-content img {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wordpress-content img {
+    max-width: 800px;
+  }
+}
+
 .section-news {
   padding-top: 20px;
 }
@@ -1391,6 +1428,33 @@ footer address {
 .search-results-link a {
   color: #0645AD;
   font-weight: 500;
+}
+
+.contact-content {
+  padding: 30px 0;
+}
+
+.contact-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-content-address {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-content-address {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .section-contact {
@@ -1505,7 +1569,6 @@ input[type="number"] {
   position: relative;
   padding-left: 35px;
   margin-bottom: 22px;
-  margin-left: 20px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
